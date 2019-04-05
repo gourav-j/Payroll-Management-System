@@ -4,6 +4,8 @@ from django.contrib.auth import authenticate, login, logout
 from django.http import HttpResponseRedirect, HttpResponse
 from django.urls import reverse
 from django.contrib.auth.decorators import login_required
+from django.core.mail import send_mail
+from django.conf import settings
 
 def index(request):
     return render(request,'pms/index.html')
@@ -25,6 +27,7 @@ def user_logout(request):
 def register(request):
     registered = False
     if request.session.has_key('username'):
+        username = request.session['username']
         return render(request,'pms/index.html')
     if request.method == 'POST':
         user_form = UserForm(data=request.POST)
@@ -36,6 +39,11 @@ def register(request):
             profile = profile_form.save(commit=False)
             profile.user = user
             profile.save()
+            subject = 'Thank you for registering to our site'
+            message = ' it  means a world to us '
+            email_from = settings.EMAIL_HOST_USER
+            recipient_list = [request.POST.get('email_id'),]
+            send_mail( subject, message, email_from, recipient_list )
             registered = True
         else:
             print(user_form.errors,profile_form.errors)
@@ -50,6 +58,9 @@ def register(request):
                            'registered':registered})
 
 def user_login(request):
+    if request.session.has_key('username'):
+        username = request.session['username']
+        return render(request,'pms/index.html')
     if request.method == 'POST':
         username = request.POST.get('username')
         password = request.POST.get('password')
@@ -62,8 +73,6 @@ def user_login(request):
             else:
                 return HttpResponse("Your account was inactive.")
         else:
-            print("Someone tried to login and failed.")
-            print("They used username: {} and password: {}".format(username,password))
-            return HttpResponse("Invalid login details given")
+            return HttpResponse("Invalid login details given.")
     else:
         return render(request, 'pms/login.html', {})
