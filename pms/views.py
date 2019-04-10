@@ -43,7 +43,8 @@ def register(request):
             subject = 'Thank you for registering to our site'
             message = ' it  means a world to us '
             email_from = settings.EMAIL_HOST_USER
-            recipient_list = [request.POST.get('email_id'),]
+            print(email_from)
+            recipient_list = [request.POST.get('email'),]
             send_mail( subject, message, email_from, recipient_list )
             registered = True
         else:
@@ -51,6 +52,11 @@ def register(request):
     else:
         user_form = UserForm()
         profile_form = UserProfileInfoForm()
+        return render(request,'pms/registration.html',
+                          {'user_form':user_form,
+                           'profile_form':profile_form,
+                           'registered':registered})
+
     if registered:
         return render(request,'pms/login.html')
     return render(request,'pms/registration.html',

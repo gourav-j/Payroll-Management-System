@@ -7,9 +7,9 @@ from .models import UserProfileInfo
 #Test Case for model
 class UserTest(TestCase):
 	def add_user(self):
-		return User.objects.create_user("test1",password="12345678")
+		return User.objects.create_user(username="test1", first_name="test", last_name="test", email="test1@gmail.com", password="12345678")
 	def register_user(self,user):
-		return UserProfileInfo.objects.create(user=user,first_name="test", last_name="test", dob="2014-02-06", gender="m", country="India", state="Ktk", city="BLR", address="344 Ns Road", pincode=723456, email_id="test1@gmail.com", mobile_no="4568796512")
+		return UserProfileInfo.objects.create(user=user, dob="2014-02-06", gender="m", country="India", state="Ktk", city="BLR", address="344 Ns Road", pincode=723456, mobile_no="4568796512")
 
 	def test_creation(self):
 		w=self.add_user()
