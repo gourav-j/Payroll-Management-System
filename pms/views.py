@@ -12,10 +12,6 @@ def index(request):
     return render(request,'pms/index.html')
 
 @login_required
-def special(request):
-    return HttpResponse("You are logged in !")
-
-@login_required
 def user_logout(request):
     logout(request)
     try:
@@ -25,7 +21,7 @@ def user_logout(request):
     return HttpResponseRedirect(reverse('index'))
 
 
-def register(request):
+def signup(request):
     registered = False
     if request.session.has_key('username'):
         username = request.session['username']
@@ -52,14 +48,14 @@ def register(request):
     else:
         user_form = UserForm()
         profile_form = UserProfileInfoForm()
-        return render(request,'pms/registration.html',
+        return render(request,'pms/signup.html',
                           {'user_form':user_form,
                            'profile_form':profile_form,
                            'registered':registered})
 
     if registered:
         return render(request,'pms/login.html')
-    return render(request,'pms/registration.html',
+    return render(request,'pms/signup.html',
                           {'user_form':user_form,
                            'profile_form':profile_form,
                            'registered':registered})
