@@ -1,2 +1,5 @@
 Django==2.0.13
+django-secrets==1.0.2
+future==0.17.1
 pytz==2018.9
+six==1.12.0

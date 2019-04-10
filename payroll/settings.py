@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/2.0/ref/settings/
 """
 
 import os
+from my_secrets import secrets
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -42,6 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'pms',
+    'django-secrets',
 ]
 
 MIDDLEWARE = [
@@ -124,9 +126,9 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_USE_TLS = True
-EMAIL_PORT = 587
-EMAIL_HOST_USER = 'testcompany049@gmail.com'
-EMAIL_HOST_PASSWORD = 'RvhEoHY8C3HV'
+EMAIL_BACKEND = secrets.EMAIL_BACKEND
+EMAIL_HOST = secrets.EMAIL_HOST
+EMAIL_USE_TLS = secrets.EMAIL_USE_TLS
+EMAIL_PORT = secrets.EMAIL_PORT
+EMAIL_HOST_USER = secrets.EMAIL_HOST_USER
+EMAIL_HOST_PASSWORD = secrets.EMAIL_HOST_PASSWORD
