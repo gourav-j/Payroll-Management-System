@@ -42,7 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'pms',
-    'django-secrets',
+    'django_secrets',
 ]
 
 MIDDLEWARE = [
@@ -125,9 +125,9 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-EMAIL_BACKEND = secrets.EMAIL_BACKEND
-EMAIL_HOST = secrets.EMAIL_HOST
-EMAIL_USE_TLS = secrets.EMAIL_USE_TLS
-EMAIL_PORT = secrets.EMAIL_PORT
+EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+EMAIL_HOST = "smtp.gmail.com"
+EMAIL_USE_TLS = "True"
+EMAIL_PORT = "587"
 EMAIL_HOST_USER = secrets.EMAIL_HOST_USER
 EMAIL_HOST_PASSWORD = secrets.EMAIL_HOST_PASSWORD
