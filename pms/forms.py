@@ -9,10 +9,10 @@ class UserForm(forms.ModelForm):
         model = User
         fields = ('username','first_name','last_name','email','password')
 
-    def clean_first_name(self):
+    '''def clean_first_name(self):
         first_name = self.cleaned_data.get('first_name')
         if not first_name:
-            raise forms.ValidationError("This field is mandatory")
+            raise forms.ValidationError("This field is mandatory")'''
         
     def clean_email(self):
         email = self.cleaned_data.get('email')
@@ -37,7 +37,7 @@ class DateInput(forms.DateInput):
 class UserProfileInfoForm(forms.ModelForm):
      class Meta():
          model = UserProfileInfo
-         fields = ('dob','gender','country','state','city','address','pincode','mobile_no')
+         fields = ('dob','gender', 'job_desc', 'country','state','city','address','pincode','mobile_no')
          widgets = {
          	'dob': DateInput(),
             'city': forms.TextInput(attrs={'class': 'form-control'}),

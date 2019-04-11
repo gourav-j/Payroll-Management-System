@@ -14,6 +14,7 @@ class UserProfileInfo(models.Model):
         choices=GENDER,
         default='m',
 	)
+	job_desc = models.ForeignKey('Job', on_delete=models.SET_NULL, null=True)
 	country = models.CharField(max_length = 15)
 	state = models.CharField(max_length = 15)
 	city = models.CharField(max_length = 15)
@@ -25,8 +26,8 @@ class UserProfileInfo(models.Model):
                 'Only 0-9 are allowed.',
                 'Invalid Number'
             ),
-            MinLengthValidator(10),
-            MaxLengthValidator(10),
+            MinLengthValidator(6),
+            MaxLengthValidator(6),
 		],)
 	mobile_no = models.CharField(max_length=10,
 		validators=[
@@ -42,8 +43,8 @@ class UserProfileInfo(models.Model):
 		return self.user.username
 
 #	job_id = models.ForeignKey('Job', on_delete=models.CASCADE)
-'''class Job(models.Model):
-	job_id = models.CharField(max_length=15)
-	job_title = models.CharField(max_length=50)
+class Job(models.Model):
 	job_desc = models.CharField(max_length=200, null=True)
-'''
+
+	def __str__(self):
+		return self.job_desc

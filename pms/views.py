@@ -37,7 +37,7 @@ def signup(request):
             profile.user = user
             profile.save()
             subject = 'Thank you for registering to our site'
-            message = ' it  means a world to us '
+            message = ' It  means a world to us '
             email_from = settings.EMAIL_HOST_USER
             print(email_from)
             recipient_list = [request.POST.get('email'),]
@@ -72,7 +72,10 @@ def user_login(request):
             if user.is_active:
                 login(request,user)
                 request.session['username'] = username
-                return HttpResponseRedirect(reverse('index'))
+                if user.is_superuser:
+                    return HttpResponseRedirect(reverse('admin:index'))
+                else:
+                    return HttpResponseRedirect(reverse('index'))
             else:
                 return HttpResponse("Your account was inactive.")
         else:
