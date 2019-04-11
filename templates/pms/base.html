@@ -13,12 +13,13 @@
 {# Django Home Link / Admin Link / Register Link#}
           <li><a class="navbar-brand" href="{% url 'index' %}">DJANGO</a></li>
           <li><a class="navbar-link" href="{% url 'admin:index' %}">Admin</a></li>
-          <li><a class="navbar-link" href="{% url 'pms:signup' %}">Register</a></li>     
-          {# Some logic on what to display for last item#}
+          {% if not user.is_authenticated %}
+          <li><a class="navbar-link" href="{% url 'pms:signup' %}">Register</a></li>    
+          {% endif %} 
           {% if user.is_authenticated %}
             <li><a href="{% url 'pms:logout' %}">Logout</a></li>
           {% else %}
-            <li><a class="navbar-link" href="{% url 'pms:user_login' %}">Login</a></li>
+            <li><a class="navbar-link" href="{% url 'pms:login' %}">Login</a></li>
           {% endif %}
 </ul>
       </div>

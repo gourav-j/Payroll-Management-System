@@ -2,8 +2,8 @@
 {% block body_block %}
   	<div class="container">
     	<div class="jumbotron">
-	      	<h1>Login here :</h1>
-			<form method="post" action="{% url 'pms:user_login' %}">
+	      	<h3>Login here :</h3>
+			<form method="post" action="{% url 'pms:login' %}">
         		{% csrf_token %}
         		{# A more "HTML" way of creating the login form#}
         		<label for="username">Username:</label>
