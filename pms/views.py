@@ -1,11 +1,15 @@
-from django.shortcuts import render, redirect
-from pms.forms import UserForm,UserProfileInfoForm
+from django.shortcuts import render, redirect, render_to_response
+from pms.forms import UserForm,UserProfileInfoForm,EditUserForm,EditUserProfileInfoForm
 from django.contrib.auth import authenticate, login, logout
 from django.http import HttpResponseRedirect, HttpResponse
 from django.urls import reverse
 from django.contrib.auth.decorators import login_required
 from django.core.mail import send_mail
 from payroll import settings
+from django import forms
+from pms.models import User
+from django.contrib import messages 
+
 #from django.conf import settings
 
 def index(request):
@@ -82,3 +86,22 @@ def user_login(request):
             return HttpResponse("Invalid login details given.")
     else:
         return render(request, 'pms/login.html', {})
+
+def user_edit(request):
+    if not request.session.has_key('username'):
+        return render(request,'pms/index.html')
+
+    user_form = EditUserForm(data = request.POST or None, instance = request.user)
+    u_p = request.user.userprofileinfo
+    profile_form = EditUserProfileInfoForm(data = request.POST or None, instance = u_p)
+    
+    if request.method == 'POST':
+        if user_form.is_valid() and profile_form.is_valid():
+            user_form.save()
+            profile_form.save()
+            return redirect(reverse('index'))
+        else:
+            return render(request, 'pms/edit_profile.html',{'user_form':user_form, 'profile_form':profile_form})
+        
+    else:
+        return render(request, 'pms/edit_profile.html',{'user_form':user_form, 'profile_form':profile_form})

@@ -1,6 +1,7 @@
 from django import forms
 from pms.models import UserProfileInfo
 from django.contrib.auth.models import User
+from django.contrib.auth.forms import UserChangeForm
 
 class UserForm(forms.ModelForm):
     password = forms.CharField(widget=forms.PasswordInput())
@@ -40,5 +41,28 @@ class UserProfileInfoForm(forms.ModelForm):
          fields = ('dob','gender', 'job_desc', 'country','state','city','address','pincode','mobile_no')
          widgets = {
          	'dob': DateInput(),
+            'city': forms.TextInput(attrs={'class': 'form-control'}),
+         }
+
+class EditUserForm(forms.ModelForm):
+    class Meta():
+        model = User
+        fields = ('first_name', 'last_name', 'email')
+
+    def clean_email(self):
+        email = self.cleaned_data.get('email')
+        username = self.cleaned_data.get('username')
+        if not email:
+            raise forms.ValidationError("This field is mandatory")
+        if email and User.objects.filter(email=email).exclude(username=username).exists():
+            raise forms.ValidationError('Email address already exists.')
+        return email
+
+class EditUserProfileInfoForm(forms.ModelForm):
+    class Meta():
+         model = UserProfileInfo
+         fields = ('dob','gender', 'job_desc', 'country','state','city','address','pincode','mobile_no')
+         widgets = {
+            'dob': DateInput(),
             'city': forms.TextInput(attrs={'class': 'form-control'}),
          }

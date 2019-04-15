@@ -7,6 +7,9 @@
     	<h2>Hello admin!
     {% elif user.is_authenticated %}
         <h2>Hello {{ user.username }}!</h2>
+        <ul>
+            <li><a href = "{% url 'pms:edit_profile' %}")> Update Profile </a></li>
+        </ul>
     {% else %}
         <h2>Register or Login if you'd like to</h2>
     {% endif %}
