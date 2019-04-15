@@ -38,7 +38,7 @@ class DateInput(forms.DateInput):
 class UserProfileInfoForm(forms.ModelForm):
      class Meta():
          model = UserProfileInfo
-         fields = ('dob','gender', 'job_desc', 'country','state','city','address','pincode','mobile_no')
+         fields = ('dob','gender', 'job_desc', 'address', 'state', 'city', 'country', 'pincode', 'mobile_no')
          widgets = {
          	'dob': DateInput(),
             'city': forms.TextInput(attrs={'class': 'form-control'}),

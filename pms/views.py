@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect, render_to_response
+from django.shortcuts import render, redirect
 from pms.forms import UserForm,UserProfileInfoForm,EditUserForm,EditUserProfileInfoForm
 from django.contrib.auth import authenticate, login, logout
 from django.http import HttpResponseRedirect, HttpResponse
@@ -105,3 +105,7 @@ def user_edit(request):
         
     else:
         return render(request, 'pms/edit_profile.html',{'user_form':user_form, 'profile_form':profile_form})
+
+def view_profile(request):
+    args = {'user':request.user, 'userprofileinfo':request.user.userprofileinfo}
+    return render(request, 'pms/view_profile.html', args)

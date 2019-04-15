@@ -24,7 +24,6 @@ class UserProfileInfo(models.Model):
 			 RegexValidator(
                 r'^[0-9]*$',
                 'Only 0-9 are allowed.',
-                'Invalid Number'
             ),
             MinLengthValidator(6),
             MaxLengthValidator(6),
@@ -34,13 +33,12 @@ class UserProfileInfo(models.Model):
 			 RegexValidator(
                 r'^[0-9]*$',
                 'Only 0-9 are allowed.',
-                'Invalid Number'
             ),
             MinLengthValidator(10),
             MaxLengthValidator(10),
 		],)
 	def __str__(self):
-		return self.user.username
+		return self.user.first_name
 
 #	job_id = models.ForeignKey('Job', on_delete=models.CASCADE)
 class Job(models.Model):
