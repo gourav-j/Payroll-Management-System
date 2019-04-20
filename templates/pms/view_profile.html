@@ -1,19 +1,65 @@
 {% extends "pms/base.html" %}
 {% block body_block %}
   <div class="container">
-    <h1>Profile</h1>
-      <p>Username: <label>{{user}}</label></p>
-      <p>First name: <label>{{user.first_name}}</label></p>
-      <p>Last name: <label>{{user.last_name}}</label></p>
-      <p>Email: <label>{{user.email}}</label></p>
-      <p>DOB: <label>{{userprofileinfo.dob}}</label></p>
-      <p>Gender: <label>{{userprofileinfo.gender}}</label></p>
-      <p>Job Desc: <label>{{userprofileinfo.job_desc}}</label></p>
-      <p>Address: <label>{{userprofileinfo.address}}</label></p>
-      <p>City: <label>{{userprofileinfo.state}}</label></p>
-      <p>State: <label>{{userprofileinfo.state}}</label></p>
-      <p>Country: <label>{{userprofileinfo.country}}</label></p>
-      <p>Pincode: <label>{{userprofileinfo.pincode}}</label></p>
-      <p>Mobile: <label>{{userprofileinfo.mobile_no}}</label></p>
+    <div class="jumbotron">
+    <h3 class="page-header"><strong>{{user.first_name}}'s Profile</strong></h3>
+
+      <table class="table table-hover table-bordered table-user-information">
+        <tbody>
+          <tr>
+            <td class="info">Username:</td>
+            <td class="active">{{user}}</td>
+          </tr>
+          <tr>
+            <td class="info">First name:</td>
+            <td class="active">{{user.first_name}}</td>
+          </tr>
+          <tr>
+            <td class="info">Last name:</td>
+            <td class="active">{{user.last_name}}</td>
+          </tr>
+          <tr>
+            <td class="info">Email:</td>
+            <td class="active">{{user.email}}</td>
+          </tr>
+          <tr>
+            <td class="info">DOB:</td>
+            <td class="active">{{userprofileinfo.dob}}</td>
+          </tr>
+          <tr>
+            <td class="info">Gender:</td>
+            <td class="active">{{userprofileinfo.gender}}</td>
+          </tr>
+          <tr>
+            <td class="info">Job Desc:</td>
+            <td class="active">{{userprofileinfo.job_desc}}</td>
+          </tr>
+          <tr>
+            <td class="info">Address:</td>
+            <td class="active">{{userprofileinfo.address}}</td>
+          </tr>
+          <tr>
+            <td class="info">City:</td>
+            <td class="active">{{userprofileinfo.state}}</td>
+          </tr>
+          <tr>
+            <td class="info">State:</td>
+            <td class="active">{{userprofileinfo.city}}</td>
+          </tr>
+           <tr>
+            <td class="info">Country:</td>
+            <td class="active">{{userprofileinfo.country}}</td>
+          </tr>
+           <tr>
+            <td class="info">Pincode:</td>
+            <td class="active">{{userprofileinfo.pincode}}</td>
+          </tr>
+           <tr>
+            <td class="info">Mobile:</td>
+            <td class="active">{{userprofileinfo.mobile_no}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </div>
 {% endblock %}

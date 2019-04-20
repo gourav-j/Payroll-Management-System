@@ -9,7 +9,14 @@ class UserForm(forms.ModelForm):
     class Meta():
         model = User
         fields = ('username','first_name','last_name','email','password')
-
+        widgets = {
+            'username': forms.TextInput(attrs={'class': 'form-control','placeholder':'Username'}),
+            'first_name': forms.TextInput(attrs={'class': 'form-control','placeholder':'First Name'}),
+            'last_name': forms.TextInput(attrs={'class': 'form-control','placeholder':'Last Name'}),
+            'email': forms.EmailInput(attrs={'class': 'form-control','placeholder':'Email'}),
+            'password': forms.TextInput(attrs={'class': 'form-control','placeholder':'Password'}),
+            'confirm_password': forms.TextInput(attrs={'class': 'form-control','placeholder':'Confirm Password'}),
+        }
     '''def clean_first_name(self):
         first_name = self.cleaned_data.get('first_name')
         if not first_name:
@@ -38,16 +45,26 @@ class DateInput(forms.DateInput):
 class UserProfileInfoForm(forms.ModelForm):
      class Meta():
          model = UserProfileInfo
-         fields = ('dob','gender', 'job_desc', 'address', 'state', 'city', 'country', 'pincode', 'mobile_no')
+         fields = ('dob','gender', 'job_desc', 'address', 'city', 'state', 'country', 'pincode', 'mobile_no')
          widgets = {
-         	'dob': DateInput(),
-            'city': forms.TextInput(attrs={'class': 'form-control'}),
+         	'dob': DateInput(attrs={'class':'input-group'}),
+            'address': forms.TextInput(attrs={'class': 'form-control','placeholder':'Address'}),
+            'city': forms.TextInput(attrs={'class': 'form-control','placeholder':'City'}),
+            'state': forms.TextInput(attrs={'class': 'form-control','placeholder':'State'}),
+            'country': forms.TextInput(attrs={'class': 'form-control','placeholder':'Country'}),
+            'pincode': forms.TextInput(attrs={'class': 'form-control','placeholder':'Pincode'}),
+            'mobile_no': forms.TextInput(attrs={'class': 'form-control','placeholder':'Mobile no'}),
          }
 
 class EditUserForm(forms.ModelForm):
     class Meta():
         model = User
         fields = ('first_name', 'last_name', 'email')
+        widgets = {
+            'first_name': forms.TextInput(attrs={'class': 'form-control','placeholder':'First Name'}),
+            'last_name': forms.TextInput(attrs={'class': 'form-control','placeholder':'Last Name'}),
+            'email': forms.EmailInput(attrs={'class': 'form-control','placeholder':'Email'}),
+        }
 
     def clean_email(self):
         email = self.cleaned_data.get('email')
@@ -63,6 +80,11 @@ class EditUserProfileInfoForm(forms.ModelForm):
          model = UserProfileInfo
          fields = ('dob','gender', 'job_desc', 'country','state','city','address','pincode','mobile_no')
          widgets = {
-            'dob': DateInput(),
-            'city': forms.TextInput(attrs={'class': 'form-control'}),
+            'dob': DateInput(attrs={'class':'input-group'}),
+            'address': forms.TextInput(attrs={'class': 'form-control','placeholder':'Address'}),
+            'city': forms.TextInput(attrs={'class': 'form-control','placeholder':'City'}),
+            'state': forms.TextInput(attrs={'class': 'form-control','placeholder':'State'}),
+            'country': forms.TextInput(attrs={'class': 'form-control','placeholder':'Country'}),
+            'pincode': forms.TextInput(attrs={'class': 'form-control','placeholder':'Pincode'}),
+            'mobile_no': forms.TextInput(attrs={'class': 'form-control','placeholder':'Mobile no'}),
          }

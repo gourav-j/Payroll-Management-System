@@ -6,7 +6,7 @@ app_name = 'pms'
 # Be careful setting the name to just /login use userlogin instead!
 urlpatterns=[
     url(r'^signup/$',views.signup,name='signup'),
-    url(r'^login/$',views.user_login,name='login'),
+    url(r'^accounts/login/$',views.user_login,name='login'),
     url(r'^logout/$', views.user_logout, name='logout'),
     url(r'^profile/$',views.view_profile, name='view_profile'),
     url(r'^profile/edit/$', views.user_edit, name='edit_profile'),

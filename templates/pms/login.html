@@ -1,17 +1,22 @@
 {% extends 'pms/base.html' %}
 {% block body_block %}
-  	<div class="container">
-    	<div class="jumbotron">
-	      	<h3>Login here :</h3>
-			<form method="post" action="{% url 'pms:login' %}">
-        		{% csrf_token %}
-        		{# A more "HTML" way of creating the login form#}
-        		<label for="username">Username:</label>
-        		<input type="text" name="username" placeholder="Username">
-				<label for="password">Password:</label>
-        		<input type="password" name="password" placeholder="Password">
-				<input type="submit" name="" value="Login">
-			</form>
-		</div>
+    <div class="container">
+      <div class="jumbotron">
+          <h3 class='page-header'><strong>Login<strong></h3>
+      <form class="form"  method="post" action="{% url 'pms:login' %}">
+            {% csrf_token %}
+            {# A more "HTML" way of creating the login form#}
+            <div class="input-group" style="margin-bottom:10px">
+              <label for="username">Username:</label>
+              <input class = "form-control" type="text" name="username" placeholder="Username">
+            </div>
+            <div class="input-group" style="margin-bottom:10px">
+              <label for="password">Password:</label>
+              <input class = "form-control" type="password" name="password" placeholder="Password">
+            </div>
+        <input class='btn btn-primary btn-md' style="margin-right:10px" type="submit" name="" value="Login">
+        <a class="btn btn-danger btn-md" href = "{% url 'password_reset' %}")> Forgot Password? </a>
+      </form>
+    </div>
   </div>
 {% endblock %}

@@ -5,12 +5,12 @@
       {% if registered %}
         <h1>Thank you for registering!</h1>
       {% else %}
-        <h3>Signup</h3>
-        <form class="form-horizontal" method="POST">
+        <h3 class='page-header'><strong>Signup<strong></h3>
+        <form class="form" method="POST">
           {% csrf_token %}
-          {{ user_form.as_p }}
-          {{ profile_form.as_p }}
-          <input type="submit" name="" value="Register">
+          {{user_form.as_p}}
+          {{profile_form.as_p}}
+          <input class='btn btn-primary btn-md' type="submit" name="" value="Register">
         </form>
       {% endif %}
     </div>

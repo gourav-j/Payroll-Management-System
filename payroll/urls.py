@@ -22,4 +22,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     url(r'^$',views.index,name='index'),
     url(r'^',include('pms.urls', namespace='pms')),
+    url(r'^', include('django.contrib.auth.urls')),
 ]
