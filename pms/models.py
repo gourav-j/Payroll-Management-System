@@ -1,6 +1,7 @@
 from django.db import models
 from django.core.validators import MinLengthValidator, MaxLengthValidator, RegexValidator
 from django.contrib.auth.models import User
+from datetime import date
 # Create your models here.
 class UserProfileInfo(models.Model):
 	user = models.OneToOneField(User,on_delete=models.CASCADE)
@@ -50,11 +51,12 @@ class Job(models.Model):
 class Attendance(models.Model):
 	user = models.ForeignKey(User, on_delete=models.SET_NULL,null=True)
 	STATUS = (
-		('i', 'IN'),
-		('o', 'OUT'),
+		('in', 'IN'),
+		('out', 'OUT'),
 	)
-	status = models.CharField(max_length=1, choices = STATUS, default='i')
-	time = models.DateTimeField(auto_now=True,null=True)
+	status = models.CharField(max_length=3, choices = STATUS, default='in')
+	time = models.DateField(auto_now=False,default=date.today())
 
 	def __str__(self):
-		return f'{self.time}'
+		return f'{self.time},{self.status}'
+

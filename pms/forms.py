@@ -4,6 +4,10 @@ from django.contrib.auth.models import User
 from django.contrib.auth.forms import UserChangeForm
 import datetime
 
+class DateInput(forms.DateInput):
+    input_type = 'date'
+
+
 class UserForm(forms.ModelForm):
     password = forms.CharField(widget=forms.PasswordInput())
     confirm_password=forms.CharField(widget=forms.PasswordInput())
@@ -40,8 +44,6 @@ class UserForm(forms.ModelForm):
         if password != confirm_password:
             raise forms.ValidationError("password and confirm_password do not match")
 
-class DateInput(forms.DateInput):
-	input_type = 'date'
 
 class UserProfileInfoForm(forms.ModelForm):
      class Meta():
@@ -94,3 +96,15 @@ class AttendanceForm(forms.ModelForm):
     class Meta():
         model = Attendance
         fields = ('status',)
+
+    def clean_status(self):
+        user = self.cleaned_data.get('user')
+        st = self.cleaned_data.get('status')
+        today_min = datetime.datetime.combine(datetime.date.today(), datetime.time.min)
+        today_max = datetime.datetime.combine(datetime.date.today(), datetime.time.max)
+        status = Attendance.objects.filter(time = datetime,user = user).count()
+        if status>2:
+            raise forms.ValidationError("Done for the day!")
+
+
+    

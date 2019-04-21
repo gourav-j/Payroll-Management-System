@@ -8,8 +8,10 @@ from django.core.mail import send_mail
 from payroll import settings
 from django import forms
 from pms.models import User,Attendance
-from django.contrib import messages 
+from django.utils import timezone
 import datetime
+from .render import Render
+
 
 #from django.conf import settings
 
@@ -88,6 +90,7 @@ def user_login(request):
     else:
         return render(request, 'pms/login.html', {})
 
+@login_required
 def user_edit(request):
     if not request.session.has_key('username'):
         return render(request,'pms/index.html')
@@ -107,10 +110,12 @@ def user_edit(request):
     else:
         return render(request, 'pms/edit_profile.html',{'user_form':user_form, 'profile_form':profile_form})
 
+@login_required
 def view_profile(request):
     args = {'user':request.user, 'userprofileinfo':request.user.userprofileinfo}
     return render(request, 'pms/view_profile.html', args)
 
+@login_required
 def attendance(request):
     if not request.session.has_key('username'):
         return render(request,'pms/index.html')
@@ -128,3 +133,19 @@ def attendance(request):
     else:
         attendance_form = AttendanceForm()
         return render(request, 'pms/attendance.html',{'attendance_form':attendance_form})
+
+@login_required
+def gen_attendance_pdf(request):
+    if request.method=='POST':
+        first_date = request.POST.get('fromdate')
+        last_date = request.POST.get('todate')
+        attendance = Attendance.objects.filter(user = request.user, time__range=(first_date,last_date))
+        today = timezone.now()
+        params={
+            'attendance':attendance,
+            'user':request.user,
+            'today':today
+        }
+        return Render.render('pms/attendance_report.html',params)
+    else:
+        return render(request,'pms/attendance_date_pick.html')
