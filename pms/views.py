@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from pms.forms import UserForm,UserProfileInfoForm,EditUserForm,EditUserProfileInfoForm
+from pms.forms import UserForm,UserProfileInfoForm,EditUserForm,EditUserProfileInfoForm,AttendanceForm
 from django.contrib.auth import authenticate, login, logout
 from django.http import HttpResponseRedirect, HttpResponse
 from django.urls import reverse
@@ -7,8 +7,9 @@ from django.contrib.auth.decorators import login_required
 from django.core.mail import send_mail
 from payroll import settings
 from django import forms
-from pms.models import User
+from pms.models import User,Attendance
 from django.contrib import messages 
+import datetime
 
 #from django.conf import settings
 
@@ -109,3 +110,21 @@ def user_edit(request):
 def view_profile(request):
     args = {'user':request.user, 'userprofileinfo':request.user.userprofileinfo}
     return render(request, 'pms/view_profile.html', args)
+
+def attendance(request):
+    if not request.session.has_key('username'):
+        return render(request,'pms/index.html')
+    
+    if request.method == 'POST':
+        attendance_form = AttendanceForm(data = request.POST)
+        if attendance_form.is_valid():
+            temp = attendance_form.save(commit=False)
+            user = User.objects.get(username=request.user.username)
+            temp.user = user
+            temp.save()
+            return redirect(reverse('index'))
+        else:
+            return render(request, 'pms/attendance.html',{'attendance_form':attendance_form})
+    else:
+        attendance_form = AttendanceForm()
+        return render(request, 'pms/attendance.html',{'attendance_form':attendance_form})

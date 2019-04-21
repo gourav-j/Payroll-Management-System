@@ -1,7 +1,8 @@
 from django import forms
-from pms.models import UserProfileInfo
+from pms.models import UserProfileInfo,Attendance
 from django.contrib.auth.models import User
 from django.contrib.auth.forms import UserChangeForm
+import datetime
 
 class UserForm(forms.ModelForm):
     password = forms.CharField(widget=forms.PasswordInput())
@@ -88,3 +89,8 @@ class EditUserProfileInfoForm(forms.ModelForm):
             'pincode': forms.TextInput(attrs={'class': 'form-control','placeholder':'Pincode'}),
             'mobile_no': forms.TextInput(attrs={'class': 'form-control','placeholder':'Mobile no'}),
          }
+
+class AttendanceForm(forms.ModelForm):
+    class Meta():
+        model = Attendance
+        fields = ('status',)

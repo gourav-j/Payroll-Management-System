@@ -46,3 +46,15 @@ class Job(models.Model):
 
 	def __str__(self):
 		return self.job_desc
+
+class Attendance(models.Model):
+	user = models.ForeignKey(User, on_delete=models.SET_NULL,null=True)
+	STATUS = (
+		('i', 'IN'),
+		('o', 'OUT'),
+	)
+	status = models.CharField(max_length=1, choices = STATUS, default='i')
+	time = models.DateTimeField(auto_now=True,null=True)
+
+	def __str__(self):
+		return f'{self.time}'

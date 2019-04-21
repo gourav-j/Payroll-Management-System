@@ -1,0 +1,14 @@
+{% extends 'pms/base.html' %}
+
+{% block body_block %}
+    <div class="container">
+      <div class="jumbotron">
+          <h3 class='page-header'><strong>Attendance<strong></h3>
+      <form class="form"  method="post" >
+            {% csrf_token %}
+            {{ attendance_form.as_p }}
+        <input class='btn btn-primary btn-md' style="margin-right:10px" type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+{% endblock %}
