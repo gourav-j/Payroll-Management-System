@@ -61,12 +61,14 @@
             <thead>
             <tr>
                 <th>Date</th>
+                <th>Time</th>
                 <th>Status</th>
             </tr>
             </thead>
 			<tbody>
             {% for a in attendance %}
                 <tr>
+                    <td>{{ a.date }}</td>
                     <td>{{ a.time }}</td>
                     <td>{{ a.status }}</td>
                 </tr>

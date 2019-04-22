@@ -6,12 +6,15 @@
           <h3 class='page-header'><strong>Mark Attendance<strong></h3>
       <form class="form"  method="post" >
             {% csrf_token %}
-            {% ifequal done 3 %}
-              <h3 class="alert alert-info">You have marked yourself for the day!</h3>
+            {% if status %}
+              <h3 class="alert alert-warning">You have already marked yourself <strong>{{status}}</strong> for the day!</h3>
+            
+            {% elif done == 3 %}
+              <h3 class="alert alert-warning">You have marked yourself for the day!</h3>
             {% else %}
             {{ attendance_form.as_p }}
             <input class='btn btn-primary btn-md' style="margin-right:10px" type="submit" value="Submit">
-            {% endifequal %}
+            {% endif %}
       </form>
     </div>
   </div>

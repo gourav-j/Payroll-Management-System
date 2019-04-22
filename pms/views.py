@@ -119,9 +119,18 @@ def attendance(request):
     if not request.session.has_key('username'):
         return render(request,'pms/index.html')
     done = 0
+    status=''
+    attendance = Attendance.objects.filter(user = request.user, date = date.today())
+    cnt = attendance.count()
     if request.method == 'POST':
         attendance_form = AttendanceForm(data = request.POST)
         if attendance_form.is_valid():
+            if cnt==1:
+                for a in attendance:
+                    if a.status==request.POST.get('status'):
+                        status=a.status
+                        return render(request,'pms/attendance.html',{'status':status,'done':done})
+            
             temp = attendance_form.save(commit=False)
             user = User.objects.get(username=request.user.username)
             temp.user = user
@@ -131,8 +140,6 @@ def attendance(request):
             return render(request, 'pms/attendance.html',{'attendance_form':attendance_form})
     else:
         attendance_form = AttendanceForm()
-        attendance = Attendance.objects.filter(user = request.user, time = date.today())
-        cnt = attendance.count()
         if cnt==2:
             done = 3
         return render(request, 'pms/attendance.html',{'attendance_form':attendance_form,'done':done})
@@ -142,7 +149,7 @@ def gen_attendance_pdf(request):
     if request.method=='POST':
         first_date = request.POST.get('fromdate')
         last_date = request.POST.get('todate')
-        attendance = Attendance.objects.filter(user = request.user, time__range=(first_date,last_date))
+        attendance = Attendance.objects.filter(user = request.user, date__range=(first_date,last_date))
         today = timezone.now()
         params={
             'attendance':attendance,
