@@ -5,13 +5,13 @@ FROM python:3.6
 ENV PYTHONUNBUFFERED 1
 
 # create root directory for our project in the container
-RUN mkdir /spe
+RUN mkdir /spe3
 
-# Set the working directory to /spe
-WORKDIR /spe
+# Set the working directory to /spe2
+WORKDIR /spe3
 
 # Copy the current directory contents into the container at /spe
-ADD . /spe/
+ADD . /spe3/
 
 # Install any needed packages specified in requirements.txt
 RUN pip install -r requirements.txt

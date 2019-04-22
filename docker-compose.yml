@@ -3,9 +3,9 @@ version: '3'
 services:
   web:
     build: .
-    command: bash -c "python manage.py makemigrations && python manage.py migrate && python manage.py runserver"
-    container_name: spe
+    command: bash -c "python manage.py makemigrations && python manage.py migrate && python manage.py runserver 0.0.0.0:8000"
+    container_name: spe3
     volumes:
-      - .:/spe
+      - .:/spe3
     ports:
       - "8000:8000"
