@@ -61,7 +61,7 @@ def signup(request):
                            'registered':registered})
 
     if registered:
-        return render(request,'pms/login.html')
+        return render(request,'pms/login.html',{'registered':registered})
     return render(request,'pms/signup.html',
                           {'user_form':user_form,
                            'profile_form':profile_form,

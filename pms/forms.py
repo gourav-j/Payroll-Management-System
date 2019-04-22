@@ -48,10 +48,10 @@ class UserForm(forms.ModelForm):
 class UserProfileInfoForm(forms.ModelForm):
      class Meta():
          model = UserProfileInfo
-         fields = ('dob','gender', 'job_desc', 'address', 'city', 'state', 'country', 'pincode', 'mobile_no')
+         fields = ('dob','gender', 'job_desc', 'street', 'city', 'state', 'country', 'pincode', 'mobile_no')
          widgets = {
          	'dob': DateInput(attrs={'class':'input-group'}),
-            'address': forms.TextInput(attrs={'class': 'form-control','placeholder':'Address'}),
+            'street': forms.TextInput(attrs={'class': 'form-control','placeholder':'Street'}),
             'city': forms.TextInput(attrs={'class': 'form-control','placeholder':'City'}),
             'state': forms.TextInput(attrs={'class': 'form-control','placeholder':'State'}),
             'country': forms.TextInput(attrs={'class': 'form-control','placeholder':'Country'}),
@@ -81,10 +81,10 @@ class EditUserForm(forms.ModelForm):
 class EditUserProfileInfoForm(forms.ModelForm):
     class Meta():
          model = UserProfileInfo
-         fields = ('dob','gender', 'job_desc', 'country','state','city','address','pincode','mobile_no')
+         fields = ('dob','gender', 'job_desc', 'country','state','city','street','pincode','mobile_no')
          widgets = {
             'dob': DateInput(attrs={'class':'input-group'}),
-            'address': forms.TextInput(attrs={'class': 'form-control','placeholder':'Address'}),
+            'street': forms.TextInput(attrs={'class': 'form-control','placeholder':'Street'}),
             'city': forms.TextInput(attrs={'class': 'form-control','placeholder':'City'}),
             'state': forms.TextInput(attrs={'class': 'form-control','placeholder':'State'}),
             'country': forms.TextInput(attrs={'class': 'form-control','placeholder':'Country'}),

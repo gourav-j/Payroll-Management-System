@@ -19,7 +19,7 @@ class UserProfileInfo(models.Model):
 	country = models.CharField(max_length = 15)
 	state = models.CharField(max_length = 15)
 	city = models.CharField(max_length = 15)
-	address = models.CharField(max_length = 200)
+	street = models.CharField(max_length = 200)
 	pincode = models.CharField(max_length=6,
 		validators=[
 			 RegexValidator(
@@ -60,3 +60,20 @@ class Attendance(models.Model):
 	def __str__(self):
 		return f'{self.user.username},{self.time},{self.status}'
 
+class Salary(models.Model):
+
+	user = models.ForeignKey(User,on_delete=models.CASCADE)
+	#job_desc = models.ForeignKey('Job', on_delete=models.SET_NULL, null=True)
+	basic_salary = models.IntegerField()
+	#month = models.IntegerField(validators=[ MinValueValidator(1), MaxValueValidator(12)], default = date.today().month)
+	dearness_allowance = models.IntegerField()
+	HRA = models.IntegerField()
+	conveyance_allowance = models.IntegerField()
+	entertainment_allowance = models.IntegerField()
+	percent_PF = models.IntegerField(default = 12)  #on basic+da+hra
+	medical_insurance = models.IntegerField()
+
+	gross_salary = models.IntegerField()
+	
+	def __str__(str):
+		return self.gross_salary
