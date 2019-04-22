@@ -11,7 +11,7 @@ class Test1(TestCase):
 		User.objects.create_user(username="test10", first_name="test", last_name="test", email="test1@gmail.com", password="12345678")
 		user=User.objects.get(username='test10')
 		job=Job.objects.get(job_desc='SDE1')
-		UserProfileInfo.objects.create(user=user, dob="2014-02-06", gender="m", job_desc=job, country="India", state="Ktk", city="BLR", address="344 Ns Road", pincode=723456, mobile_no="4568796512")
+		UserProfileInfo.objects.create(user=user, dob="2014-02-06", gender="m", job_desc=job, country="India", state="Ktk", city="BLR", street="344 Ns Road", pincode=723456, mobile_no="4568796512")
 
 	def test1(self):
 		job=Job.objects.get(job_desc='SDE1')
