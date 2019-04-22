@@ -96,15 +96,3 @@ class AttendanceForm(forms.ModelForm):
     class Meta():
         model = Attendance
         fields = ('status',)
-
-    def clean_status(self):
-        user = self.cleaned_data.get('user')
-        st = self.cleaned_data.get('status')
-        today_min = datetime.datetime.combine(datetime.date.today(), datetime.time.min)
-        today_max = datetime.datetime.combine(datetime.date.today(), datetime.time.max)
-        status = Attendance.objects.filter(time = datetime,user = user).count()
-        if status>2:
-            raise forms.ValidationError("Done for the day!")
-
-
-    

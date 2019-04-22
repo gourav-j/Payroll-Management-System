@@ -3,6 +3,9 @@
     <div class="container">
       <div class="jumbotron">
           <h3 class='page-header'><strong>Login<strong></h3>
+      {% if loginFail %}
+        <h5 class="alert alert-danger">Invalid login details</h5>
+      {% endif %}
       <form class="form"  method="post" action="{% url 'pms:login' %}">
             {% csrf_token %}
             {# A more "HTML" way of creating the login form#}

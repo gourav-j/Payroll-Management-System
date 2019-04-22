@@ -9,7 +9,7 @@ from payroll import settings
 from django import forms
 from pms.models import User,Attendance
 from django.utils import timezone
-import datetime
+from datetime import date
 from .render import Render
 
 
@@ -71,24 +71,23 @@ def user_login(request):
     if request.session.has_key('username'):
         username = request.session['username']
         return render(request,'pms/index.html')
+    loginFail = False
     if request.method == 'POST':
         username = request.POST.get('username')
         password = request.POST.get('password')
         user = authenticate(username=username, password=password)
         if user:
-            if user.is_active:
-                login(request,user)
-                request.session['username'] = username
-                if user.is_superuser:
-                    return HttpResponseRedirect(reverse('admin:index'))
-                else:
-                    return HttpResponseRedirect(reverse('index'))
+            login(request,user)
+            request.session['username'] = username
+            if user.is_superuser:
+                return HttpResponseRedirect(reverse('admin:index'))
             else:
-                return HttpResponse("Your account was inactive.")
+                return HttpResponseRedirect(reverse('index'))
         else:
-            return HttpResponse("Invalid login details given.")
+            loginFail = True
+            return render(request, 'pms/login.html', {'loginFail':loginFail})
     else:
-        return render(request, 'pms/login.html', {})
+        return render(request, 'pms/login.html', {'loginFail':loginFail})
 
 @login_required
 def user_edit(request):
@@ -119,7 +118,7 @@ def view_profile(request):
 def attendance(request):
     if not request.session.has_key('username'):
         return render(request,'pms/index.html')
-    
+    done = 0
     if request.method == 'POST':
         attendance_form = AttendanceForm(data = request.POST)
         if attendance_form.is_valid():
@@ -132,7 +131,11 @@ def attendance(request):
             return render(request, 'pms/attendance.html',{'attendance_form':attendance_form})
     else:
         attendance_form = AttendanceForm()
-        return render(request, 'pms/attendance.html',{'attendance_form':attendance_form})
+        attendance = Attendance.objects.filter(user = request.user, time = date.today())
+        cnt = attendance.count()
+        if cnt==2:
+            done = 3
+        return render(request, 'pms/attendance.html',{'attendance_form':attendance_form,'done':done})
 
 @login_required
 def gen_attendance_pdf(request):

@@ -58,5 +58,5 @@ class Attendance(models.Model):
 	time = models.DateField(auto_now=True)
 
 	def __str__(self):
-		return f'{self.time},{self.status}'
+		return f'{self.user.username},{self.time},{self.status}'
 
