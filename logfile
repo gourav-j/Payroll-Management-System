@@ -387,3 +387,49 @@ Traceback (most recent call last):
     obj = JobDocument(
 NameError: name 'JobDocument' is not defined
 [24/Apr/2019 22:09:08] ERROR [django.server:124] "POST /admin/pms/job/add/ HTTP/1.1" 500 149048 basehttp.py
+[24/Apr/2019 22:28:52] INFO [django.server:124] "GET / HTTP/1.1" 200 1222 basehttp.py
+[24/Apr/2019 22:30:09] INFO [django.server:124] "GET /logout/ HTTP/1.1" 302 0 basehttp.py
+[24/Apr/2019 22:30:09] INFO [django.server:124] "GET / HTTP/1.1" 200 1185 basehttp.py
+[24/Apr/2019 22:34:23] INFO [django.server:124] "GET /accounts/login/ HTTP/1.1" 200 2332 basehttp.py
+[24/Apr/2019 22:34:25] INFO [django.server:124] "POST /accounts/login/ HTTP/1.1" 302 0 basehttp.py
+[24/Apr/2019 22:34:25] INFO [django.server:124] "GET /admin/ HTTP/1.1" 200 7938 basehttp.py
+[24/Apr/2019 22:34:26] INFO [django.server:124] "GET /admin/auth/user/ HTTP/1.1" 200 7529 basehttp.py
+[24/Apr/2019 22:34:26] INFO [django.server:124] "GET /admin/jsi18n/ HTTP/1.1" 200 3185 basehttp.py
+[24/Apr/2019 22:34:26] INFO [django.server:124] "GET /static/admin/img/search.svg HTTP/1.1" 304 0 basehttp.py
+[24/Apr/2019 22:34:26] INFO [django.server:124] "GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0 basehttp.py
+[24/Apr/2019 22:34:26] INFO [django.server:124] "GET /static/admin/img/icon-no.svg HTTP/1.1" 304 0 basehttp.py
+[24/Apr/2019 22:34:26] INFO [django.server:124] "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 304 0 basehttp.py
+[24/Apr/2019 22:55:26] ERROR [django.request:118] Internal Server Error: /login/ exception.py
+Traceback (most recent call last):
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/core/handlers/base.py", line 158, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/core/handlers/base.py", line 156, in _get_response
+    response = response.render()
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/template/response.py", line 81, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/template/response.py", line 63, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/template/loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(', '.join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: registration/login.html
+[24/Apr/2019 22:55:26] ERROR [django.request:118] Internal Server Error: /login/ exception.py
+Traceback (most recent call last):
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/core/handlers/base.py", line 158, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/core/handlers/base.py", line 156, in _get_response
+    response = response.render()
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/template/response.py", line 81, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/template/response.py", line 63, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/template/loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(', '.join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: registration/login.html
