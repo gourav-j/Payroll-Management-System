@@ -45,7 +45,6 @@ class UserProfileInfo(models.Model):
 #	job_id = models.ForeignKey('Job', on_delete=models.CASCADE)
 class Job(models.Model):
 	job_desc = models.CharField(max_length=200, null=True)
-
 	def __str__(self):
 		return self.job_desc
 

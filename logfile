@@ -1,0 +1,389 @@
+[24/Apr/2019 19:03:27] INFO [django.server:124] "GET /profile/edit/ HTTP/1.1" 200 4156 basehttp.py
+[24/Apr/2019 19:03:40] INFO [django.server:124] "GET /logout/ HTTP/1.1" 302 0 basehttp.py
+[24/Apr/2019 19:03:40] INFO [django.server:124] "GET / HTTP/1.1" 200 1185 basehttp.py
+[24/Apr/2019 19:03:42] INFO [django.server:124] "GET /accounts/login/ HTTP/1.1" 200 2332 basehttp.py
+[24/Apr/2019 19:03:47] INFO [django.server:124] "POST /accounts/login/ HTTP/1.1" 302 0 basehttp.py
+[24/Apr/2019 19:03:47] INFO [django.server:124] "GET / HTTP/1.1" 200 1722 basehttp.py
+[24/Apr/2019 19:03:49] INFO [django.server:124] "GET / HTTP/1.1" 200 1722 basehttp.py
+[24/Apr/2019 19:03:50] INFO [django.server:124] "GET /profile/view HTTP/1.1" 200 3457 basehttp.py
+[24/Apr/2019 19:03:53] WARNING [django.request:93] Not Found: /favicon.ico base.py
+[24/Apr/2019 19:03:53] WARNING [django.server:124] "GET /favicon.ico HTTP/1.1" 404 5240 basehttp.py
+[24/Apr/2019 19:06:00] INFO [django.server:124] "GET /attendance/ HTTP/1.1" 200 2214 basehttp.py
+[24/Apr/2019 19:06:00] WARNING [django.request:93] Not Found: /favicon.ico base.py
+[24/Apr/2019 19:06:00] WARNING [django.server:124] "GET /favicon.ico HTTP/1.1" 404 5240 basehttp.py
+[24/Apr/2019 19:07:19] INFO [django.server:124] "GET /profile/view HTTP/1.1" 200 3457 basehttp.py
+[24/Apr/2019 19:07:20] WARNING [django.request:93] Not Found: /favicon.ico base.py
+[24/Apr/2019 19:07:20] WARNING [django.server:124] "GET /favicon.ico HTTP/1.1" 404 5240 basehttp.py
+[24/Apr/2019 19:44:41] INFO [django.server:124] "GET / HTTP/1.1" 200 1185 basehttp.py
+[24/Apr/2019 19:44:44] INFO [django.server:124] "GET /accounts/login/ HTTP/1.1" 200 2332 basehttp.py
+[24/Apr/2019 19:46:02] INFO [django.server:124] "GET /signup/ HTTP/1.1" 200 4023 basehttp.py
+[24/Apr/2019 19:46:10] INFO [django.server:124] "GET /accounts/login/ HTTP/1.1" 200 2332 basehttp.py
+[24/Apr/2019 19:46:23] INFO [django.server:124] "POST /accounts/login/ HTTP/1.1" 302 0 basehttp.py
+[24/Apr/2019 19:46:24] INFO [django.server:124] "GET /admin/ HTTP/1.1" 200 7938 basehttp.py
+[24/Apr/2019 19:46:24] INFO [django.server:124] "GET /static/admin/css/dashboard.css HTTP/1.1" 200 412 basehttp.py
+[24/Apr/2019 19:46:24] INFO [django.server:124] "GET /static/admin/css/base.css HTTP/1.1" 200 16106 basehttp.py
+[24/Apr/2019 19:46:24] INFO [django.server:124] "GET /static/admin/css/responsive.css HTTP/1.1" 200 17894 basehttp.py
+[24/Apr/2019 19:46:24] INFO [django.server:124] "GET /static/admin/css/fonts.css HTTP/1.1" 200 423 basehttp.py
+[24/Apr/2019 19:46:25] INFO [django.server:124] "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392 basehttp.py
+[24/Apr/2019 19:46:25] INFO [django.server:124] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331 basehttp.py
+[24/Apr/2019 19:46:25] INFO [django.server:124] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380 basehttp.py
+[24/Apr/2019 19:46:25] INFO [django.server:124] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 82564 basehttp.py
+[24/Apr/2019 19:46:25] INFO [django.server:124] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 81348 basehttp.py
+[24/Apr/2019 19:46:25] INFO [django.server:124] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 80304 basehttp.py
+[24/Apr/2019 19:46:27] WARNING [django.request:93] Not Found: /favicon.ico base.py
+[24/Apr/2019 19:46:27] WARNING [django.server:124] "GET /favicon.ico HTTP/1.1" 404 5238 basehttp.py
+[24/Apr/2019 19:46:45] INFO [django.server:124] "GET / HTTP/1.1" 200 1222 basehttp.py
+[24/Apr/2019 19:46:57] INFO [django.server:124] "GET /logout/ HTTP/1.1" 302 0 basehttp.py
+[24/Apr/2019 19:46:57] INFO [django.server:124] "GET / HTTP/1.1" 200 1185 basehttp.py
+[24/Apr/2019 19:47:00] INFO [django.server:124] "GET /accounts/login/ HTTP/1.1" 200 2332 basehttp.py
+[24/Apr/2019 19:47:08] INFO [django.server:124] "POST /accounts/login/ HTTP/1.1" 302 0 basehttp.py
+[24/Apr/2019 19:47:08] INFO [django.server:124] "GET / HTTP/1.1" 200 1722 basehttp.py
+[24/Apr/2019 19:47:09] WARNING [django.request:93] Not Found: /favicon.ico base.py
+[24/Apr/2019 19:47:09] WARNING [django.server:124] "GET /favicon.ico HTTP/1.1" 404 5238 basehttp.py
+[24/Apr/2019 19:47:20] INFO [django.server:124] "GET /profile/edit/ HTTP/1.1" 200 4156 basehttp.py
+[24/Apr/2019 19:52:01] INFO [django.server:124] "GET / HTTP/1.1" 200 1722 basehttp.py
+[24/Apr/2019 19:55:12] INFO [django.server:124] "GET /logout/ HTTP/1.1" 302 0 basehttp.py
+[24/Apr/2019 19:55:12] INFO [django.server:124] "GET / HTTP/1.1" 200 1185 basehttp.py
+[24/Apr/2019 19:55:18] INFO [django.server:124] "GET /accounts/login/ HTTP/1.1" 200 2332 basehttp.py
+[24/Apr/2019 20:02:47] INFO [django.server:124] "GET /signup/ HTTP/1.1" 200 4023 basehttp.py
+[24/Apr/2019 20:02:48] INFO [django.server:124] "GET /accounts/login/ HTTP/1.1" 200 2332 basehttp.py
+[24/Apr/2019 20:02:55] INFO [django.server:124] "POST /accounts/login/ HTTP/1.1" 302 0 basehttp.py
+[24/Apr/2019 20:02:55] INFO [django.server:124] "GET / HTTP/1.1" 200 1722 basehttp.py
+[24/Apr/2019 20:02:56] WARNING [django.request:93] Not Found: /favicon.ico base.py
+[24/Apr/2019 20:02:56] WARNING [django.request:93] Not Found: /favicon.ico base.py
+[24/Apr/2019 20:02:56] WARNING [django.server:124] "GET /favicon.ico HTTP/1.1" 404 5238 basehttp.py
+[24/Apr/2019 20:05:44] INFO [django.server:124] "GET /profile/edit/ HTTP/1.1" 200 4156 basehttp.py
+[24/Apr/2019 20:05:46] WARNING [django.request:93] Not Found: /favicon.ico base.py
+[24/Apr/2019 20:05:46] WARNING [django.request:93] Not Found: /favicon.ico base.py
+[24/Apr/2019 20:05:46] WARNING [django.server:124] "GET /favicon.ico HTTP/1.1" 404 5238 basehttp.py
+[24/Apr/2019 20:08:33] INFO [django.server:124] "GET /salary/gen-report/ HTTP/1.1" 200 3302 basehttp.py
+[24/Apr/2019 21:18:23] INFO [django.server:124] "GET / HTTP/1.1" 200 1722 basehttp.py
+[24/Apr/2019 21:18:26] INFO [django.server:124] "GET /logout/ HTTP/1.1" 302 0 basehttp.py
+[24/Apr/2019 21:18:26] INFO [django.server:124] "GET / HTTP/1.1" 200 1185 basehttp.py
+[24/Apr/2019 21:18:28] INFO [django.server:124] "GET /accounts/login/ HTTP/1.1" 200 2332 basehttp.py
+[24/Apr/2019 21:18:35] INFO [django.server:124] "POST /accounts/login/ HTTP/1.1" 302 0 basehttp.py
+[24/Apr/2019 21:18:35] INFO [django.server:124] "GET /admin/ HTTP/1.1" 200 7938 basehttp.py
+[24/Apr/2019 21:18:35] INFO [django.server:124] "GET /static/admin/css/responsive.css HTTP/1.1" 304 0 basehttp.py
+[24/Apr/2019 21:18:35] INFO [django.server:124] "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0 basehttp.py
+[24/Apr/2019 21:18:35] INFO [django.server:124] "GET /static/admin/css/base.css HTTP/1.1" 304 0 basehttp.py
+[24/Apr/2019 21:18:36] INFO [django.server:124] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0 basehttp.py
+[24/Apr/2019 21:18:36] INFO [django.server:124] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0 basehttp.py
+[24/Apr/2019 21:18:36] INFO [django.server:124] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0 basehttp.py
+[24/Apr/2019 21:18:36] INFO [django.server:124] "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 304 0 basehttp.py
+[24/Apr/2019 21:18:36] INFO [django.server:124] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0 basehttp.py
+[24/Apr/2019 21:18:36] INFO [django.server:124] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0 basehttp.py
+[24/Apr/2019 21:18:36] INFO [django.server:124] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0 basehttp.py
+[24/Apr/2019 21:18:38] WARNING [django.request:93] Not Found: /favicon.ico base.py
+[24/Apr/2019 21:18:38] WARNING [django.request:93] Not Found: /favicon.ico base.py
+[24/Apr/2019 21:18:38] WARNING [django.server:124] "GET /favicon.ico HTTP/1.1" 404 5238 basehttp.py
+[24/Apr/2019 21:18:40] INFO [django.server:124] "GET /admin/auth/user/ HTTP/1.1" 200 7529 basehttp.py
+[24/Apr/2019 21:18:40] INFO [django.server:124] "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0 basehttp.py
+[24/Apr/2019 21:18:40] INFO [django.server:124] "GET /static/admin/css/changelists.css HTTP/1.1" 304 0 basehttp.py
+[24/Apr/2019 21:18:40] INFO [django.server:124] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 6897 basehttp.py
+[24/Apr/2019 21:18:40] INFO [django.server:124] "GET /admin/jsi18n/ HTTP/1.1" 200 3185 basehttp.py
+[24/Apr/2019 21:18:40] INFO [django.server:124] "GET /static/admin/js/core.js HTTP/1.1" 200 7134 basehttp.py
+[24/Apr/2019 21:18:40] INFO [django.server:124] "GET /static/admin/js/actions.js HTTP/1.1" 304 0 basehttp.py
+[24/Apr/2019 21:18:40] INFO [django.server:124] "GET /static/admin/img/search.svg HTTP/1.1" 304 0 basehttp.py
+[24/Apr/2019 21:18:40] INFO [django.server:124] "GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0 basehttp.py
+[24/Apr/2019 21:18:40] INFO [django.server:124] "GET /static/admin/img/icon-no.svg HTTP/1.1" 304 0 basehttp.py
+[24/Apr/2019 21:18:41] INFO [django.server:124] "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0 basehttp.py
+[24/Apr/2019 21:18:41] INFO [django.server:124] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 128820 basehttp.py
+[24/Apr/2019 21:18:41] INFO [django.server:124] "GET /static/admin/js/urlify.js HTTP/1.1" 200 8729 basehttp.py
+[24/Apr/2019 21:18:41] INFO [django.server:124] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 258648 basehttp.py
+[24/Apr/2019 21:18:41] INFO [django.server:124] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0 basehttp.py
+[24/Apr/2019 21:18:41] INFO [django.server:124] "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 304 0 basehttp.py
+[24/Apr/2019 21:18:41] WARNING [django.request:93] Not Found: /favicon.ico base.py
+[24/Apr/2019 21:18:41] WARNING [django.request:93] Not Found: /favicon.ico base.py
+[24/Apr/2019 21:18:41] WARNING [django.server:124] "GET /favicon.ico HTTP/1.1" 404 5238 basehttp.py
+[24/Apr/2019 21:59:40] INFO [django.server:124] "GET /admin/ HTTP/1.1" 302 0 basehttp.py
+[24/Apr/2019 21:59:40] INFO [django.server:124] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 2011 basehttp.py
+[24/Apr/2019 21:59:40] INFO [django.server:124] "GET /static/admin/css/base.css HTTP/1.1" 304 0 basehttp.py
+[24/Apr/2019 21:59:40] INFO [django.server:124] "GET /static/admin/css/login.css HTTP/1.1" 304 0 basehttp.py
+[24/Apr/2019 21:59:40] INFO [django.server:124] "GET /static/admin/css/responsive.css HTTP/1.1" 304 0 basehttp.py
+[24/Apr/2019 21:59:40] INFO [django.server:124] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0 basehttp.py
+[24/Apr/2019 21:59:41] INFO [django.server:124] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0 basehttp.py
+[24/Apr/2019 21:59:41] INFO [django.server:124] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0 basehttp.py
+[24/Apr/2019 21:59:41] INFO [django.server:124] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0 basehttp.py
+[24/Apr/2019 21:59:43] INFO [django.server:124] "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0 basehttp.py
+[24/Apr/2019 21:59:43] INFO [django.server:124] "GET /admin/ HTTP/1.1" 200 7938 basehttp.py
+[24/Apr/2019 21:59:43] INFO [django.server:124] "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0 basehttp.py
+[24/Apr/2019 21:59:44] INFO [django.server:124] "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 304 0 basehttp.py
+[24/Apr/2019 21:59:44] INFO [django.server:124] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0 basehttp.py
+[24/Apr/2019 21:59:44] INFO [django.server:124] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0 basehttp.py
+[24/Apr/2019 21:59:45] INFO [django.server:124] "GET /admin/pms/job/ HTTP/1.1" 200 4336 basehttp.py
+[24/Apr/2019 21:59:46] INFO [django.server:124] "GET /static/admin/css/changelists.css HTTP/1.1" 304 0 basehttp.py
+[24/Apr/2019 21:59:46] INFO [django.server:124] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0 basehttp.py
+[24/Apr/2019 21:59:46] INFO [django.server:124] "GET /static/admin/js/actions.js HTTP/1.1" 304 0 basehttp.py
+[24/Apr/2019 21:59:46] INFO [django.server:124] "GET /static/admin/js/core.js HTTP/1.1" 304 0 basehttp.py
+[24/Apr/2019 21:59:46] INFO [django.server:124] "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0 basehttp.py
+[24/Apr/2019 21:59:46] INFO [django.server:124] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0 basehttp.py
+[24/Apr/2019 21:59:46] INFO [django.server:124] "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0 basehttp.py
+[24/Apr/2019 21:59:46] INFO [django.server:124] "GET /static/admin/js/urlify.js HTTP/1.1" 304 0 basehttp.py
+[24/Apr/2019 21:59:46] INFO [django.server:124] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0 basehttp.py
+[24/Apr/2019 21:59:46] INFO [django.server:124] "GET /admin/jsi18n/ HTTP/1.1" 200 3185 basehttp.py
+[24/Apr/2019 21:59:46] INFO [django.server:124] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0 basehttp.py
+[24/Apr/2019 22:06:17] INFO [django.server:124] "GET /admin/pms/job/add/ HTTP/1.1" 200 4009 basehttp.py
+[24/Apr/2019 22:06:17] INFO [django.server:124] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0 basehttp.py
+[24/Apr/2019 22:06:17] INFO [django.server:124] "GET /admin/jsi18n/ HTTP/1.1" 200 3185 basehttp.py
+[24/Apr/2019 22:06:18] INFO [django.server:124] "GET /static/admin/js/change_form.js HTTP/1.1" 304 0 basehttp.py
+[24/Apr/2019 22:06:18] INFO [django.server:124] "GET /static/admin/css/forms.css HTTP/1.1" 304 0 basehttp.py
+[24/Apr/2019 22:06:18] INFO [django.server:124] "GET /static/admin/css/widgets.css HTTP/1.1" 304 0 basehttp.py
+[24/Apr/2019 22:06:24] ERROR [django.request:118] Internal Server Error: /admin/pms/job/add/ exception.py
+Traceback (most recent call last):
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/contrib/admin/options.py", line 575, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/utils/decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/contrib/admin/sites.py", line 223, in inner
+    return view(request, *args, **kwargs)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1554, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/utils/decorators.py", line 62, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/utils/decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/utils/decorators.py", line 58, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1451, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1491, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1027, in save_model
+    obj.save()
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/db/models/base.py", line 729, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/db/models/base.py", line 769, in save_base
+    update_fields=update_fields, raw=raw, using=using,
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/dispatch/dispatcher.py", line 178, in send
+    for receiver in self._live_receivers(sender)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/dispatch/dispatcher.py", line 178, in <listcomp>
+    for receiver in self._live_receivers(sender)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/pms/signals.py", line 7, in index_question
+    instance.indexing()
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/pms/models.py", line 49, in indexing
+    obj = JobDocument(
+NameError: name 'JobDocument' is not defined
+[24/Apr/2019 22:06:24] ERROR [django.request:118] Internal Server Error: /admin/pms/job/add/ exception.py
+Traceback (most recent call last):
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/contrib/admin/options.py", line 575, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/utils/decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/contrib/admin/sites.py", line 223, in inner
+    return view(request, *args, **kwargs)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1554, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/utils/decorators.py", line 62, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/utils/decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/utils/decorators.py", line 58, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1451, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1491, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1027, in save_model
+    obj.save()
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/db/models/base.py", line 729, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/db/models/base.py", line 769, in save_base
+    update_fields=update_fields, raw=raw, using=using,
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/dispatch/dispatcher.py", line 178, in send
+    for receiver in self._live_receivers(sender)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/dispatch/dispatcher.py", line 178, in <listcomp>
+    for receiver in self._live_receivers(sender)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/pms/signals.py", line 7, in index_question
+    instance.indexing()
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/pms/models.py", line 49, in indexing
+    obj = JobDocument(
+NameError: name 'JobDocument' is not defined
+[24/Apr/2019 22:06:25] ERROR [django.server:124] "POST /admin/pms/job/add/ HTTP/1.1" 500 150049 basehttp.py
+[24/Apr/2019 22:08:47] ERROR [django.request:118] Internal Server Error: /admin/pms/job/add/ exception.py
+Traceback (most recent call last):
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/contrib/admin/options.py", line 575, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/utils/decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/contrib/admin/sites.py", line 223, in inner
+    return view(request, *args, **kwargs)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1554, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/utils/decorators.py", line 62, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/utils/decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/utils/decorators.py", line 58, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1451, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1491, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1027, in save_model
+    obj.save()
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/db/models/base.py", line 729, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/db/models/base.py", line 769, in save_base
+    update_fields=update_fields, raw=raw, using=using,
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/dispatch/dispatcher.py", line 178, in send
+    for receiver in self._live_receivers(sender)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/dispatch/dispatcher.py", line 178, in <listcomp>
+    for receiver in self._live_receivers(sender)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/pms/signals.py", line 7, in index_question
+    instance.indexing()
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/pms/models.py", line 49, in indexing
+    obj = JobDocument(
+NameError: name 'JobDocument' is not defined
+[24/Apr/2019 22:08:47] ERROR [django.request:118] Internal Server Error: /admin/pms/job/add/ exception.py
+Traceback (most recent call last):
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/contrib/admin/options.py", line 575, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/utils/decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/contrib/admin/sites.py", line 223, in inner
+    return view(request, *args, **kwargs)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1554, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/utils/decorators.py", line 62, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/utils/decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/utils/decorators.py", line 58, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1451, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1491, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1027, in save_model
+    obj.save()
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/db/models/base.py", line 729, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/db/models/base.py", line 769, in save_base
+    update_fields=update_fields, raw=raw, using=using,
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/dispatch/dispatcher.py", line 178, in send
+    for receiver in self._live_receivers(sender)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/dispatch/dispatcher.py", line 178, in <listcomp>
+    for receiver in self._live_receivers(sender)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/pms/signals.py", line 7, in index_question
+    instance.indexing()
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/pms/models.py", line 49, in indexing
+    obj = JobDocument(
+NameError: name 'JobDocument' is not defined
+[24/Apr/2019 22:08:47] ERROR [django.server:124] "POST /admin/pms/job/add/ HTTP/1.1" 500 150049 basehttp.py
+[24/Apr/2019 22:09:08] ERROR [django.request:118] Internal Server Error: /admin/pms/job/add/ exception.py
+Traceback (most recent call last):
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/contrib/admin/options.py", line 575, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/utils/decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/contrib/admin/sites.py", line 223, in inner
+    return view(request, *args, **kwargs)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1554, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/utils/decorators.py", line 62, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/utils/decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/utils/decorators.py", line 58, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1451, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1491, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1027, in save_model
+    obj.save()
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/db/models/base.py", line 729, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/db/models/base.py", line 769, in save_base
+    update_fields=update_fields, raw=raw, using=using,
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/dispatch/dispatcher.py", line 178, in send
+    for receiver in self._live_receivers(sender)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/dispatch/dispatcher.py", line 178, in <listcomp>
+    for receiver in self._live_receivers(sender)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/pms/signals.py", line 7, in index_question
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/pms/models.py", line 49, in indexing
+    obj = JobDocument(
+NameError: name 'JobDocument' is not defined
+[24/Apr/2019 22:09:08] ERROR [django.request:118] Internal Server Error: /admin/pms/job/add/ exception.py
+Traceback (most recent call last):
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/contrib/admin/options.py", line 575, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/utils/decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/contrib/admin/sites.py", line 223, in inner
+    return view(request, *args, **kwargs)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1554, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/utils/decorators.py", line 62, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/utils/decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/utils/decorators.py", line 58, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1451, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1491, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1027, in save_model
+    obj.save()
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/db/models/base.py", line 729, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/db/models/base.py", line 769, in save_base
+    update_fields=update_fields, raw=raw, using=using,
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/dispatch/dispatcher.py", line 178, in send
+    for receiver in self._live_receivers(sender)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/dispatch/dispatcher.py", line 178, in <listcomp>
+    for receiver in self._live_receivers(sender)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/pms/signals.py", line 7, in index_question
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/pms/models.py", line 49, in indexing
+    obj = JobDocument(
+NameError: name 'JobDocument' is not defined
+[24/Apr/2019 22:09:08] ERROR [django.server:124] "POST /admin/pms/job/add/ HTTP/1.1" 500 149048 basehttp.py

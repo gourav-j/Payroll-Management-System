@@ -29,25 +29,73 @@ SECRET_KEY = 'c-dtryep0bom$@xk0na^86ro07na$t484r6ip3#k3(yx+bkk$#'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['0.0.0.0','127.0.0.1']
+ALLOWED_HOSTS = ['0.0.0.0','127.0.0.1','localhost']
+
+ELASTICSEARCH_DSL={
+    'default': {
+        'hosts': 'localhost:9200'
+    },
+}
 
 LOGGING = {
-    'version': 1,
-    'disable_existing_loggers': False,
-    'handlers': {
-        'file': {
-            'level': 'DEBUG',
-            'class': 'logging.FileHandler',
-            'filename': 'debug.log',
+  'version': 1,
+  'disable_existing_loggers': False,
+  'formatters': {
+      'simple': {
+            'format': '%(levelname)s %(message)s'
         },
-    },
-    'loggers': {
+        'standard': {
+            'format' : "[%(asctime)s] %(levelname)s [%(name)s:%(lineno)s] %(message)s %(filename)s",
+            'datefmt' : "%d/%b/%Y %H:%M:%S"
+        },
+  },
+  'handlers': {
+        'console': {
+            'level': 'INFO',
+            'class': 'logging.StreamHandler',
+            'formatter': 'simple'
+        },
+        'file': {
+            'level':'INFO',
+            'class':'logging.FileHandler',
+            'filename': BASE_DIR + "/logfile",
+            #'maxBytes': 50000,
+            #'backupCount': 2,
+            'formatter': 'standard',
+        },
+        #'logstash': {
+        #    'level': 'INFO',
+        #    'class': 'logstash.TCPLogstashHandler',
+        #    'host': '127.0.0.1',
+        #    'port': 5959, #Default value: 5959
+        #    'version': 1, # Version of logstash event schema. Default value: 0 (for backward compatibility of the library)
+        #    'message_type': 'django_logstash',  # 'type' field in logstash message. Default value: 'logstash'.
+        #    'fqdn': False, # Fully qualified domain name. Default value: false.
+        #    'tags': ['django.request'], # list of tags. Default: None.
+        #},
+  },
+  'loggers': {
+        #'django.request': {
+        #    'handlers': ['logstash'],
+        #    'level': 'INFO',
+        #    'propagate': True,
+        #},
         'django': {
-            'handlers': ['file'],
-            'level': 'DEBUG',
+            'handlers': ['console'],
+            'level': 'INFO',
             'propagate': True,
         },
-    },
+        'django': {
+            'handlers': ['file'],
+            'level': 'INFO',
+            'propagate': True,
+        },
+        'django.request': {
+            'handlers': ['file'],
+            'level': 'INFO',
+            'propagate': True,
+        },
+    }
 }
 
 # Application definition
@@ -61,6 +109,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'pms.apps.PmsConfig',
     'django_secrets',
+    'django_elasticsearch_dsl',
     #'apscheduler'
 ]
 
