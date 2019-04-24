@@ -1,4 +1,4 @@
-FROM python:3.6
+FROM python:3.6.7
 
 # The enviroment variable ensures that the python output is set straight
 # to the terminal with out buffering it first
@@ -15,3 +15,7 @@ ADD . /spe3/
 
 # Install any needed packages specified in requirements.txt
 RUN pip install -r requirements.txt
+
+EXPOSE 8000
+
+CMD ["/bin/bash", "-c", "python manage.py makemigrations && python manage.py migrate && python manage.py runserver 0.0.0.0:8000"]
