@@ -1,0 +1,57 @@
+{% extends "pms/base.html" %}
+{% block body_block %}
+  <div class="container">
+    <div class="jumbotron">
+    <h3 class="page-header"><strong>Salary Structure (As of {{ today | date:"d/m/Y" }})</strong></h3>
+    <div class="card">
+
+        <div >
+            <p>Name: {{ structure.user.first_name }} {{ structure.user.last_name }}</p>
+            <p>Posit
+              <form method="POST">Position: {{ position }}</p>
+        </div>
+      <table class="table table-hover table-bordered table-user-information">
+        <tbody>
+          <thead>
+            <tr>
+              <th>Particulars</th>
+              <th>Amount(in Rupees)</th>
+            </tr>
+          </thead>
+          <tr>
+            <td class="info">Basic Salary:</td>
+            <td class="active">{{structure.basic_salary}}</td>
+          </tr>
+          <tr>
+            <td class="info">Dearness Allowance:</td>
+            <td class="active">{{structure.DA}}</td>
+          </tr>
+          <tr>
+            <td class="info">HRA:</td>
+            <td class="active">{{structure.HRA}}</td>
+          </tr>
+          <tr>
+            <td class="info">Conveyance Allowance:</td>
+            <td class="active">{{structure.conveyance_allowance}}</td>
+          </tr>
+          <tr>
+            <td class="info">Bonus:</td>
+            <td class="active">{{ structure.bonus }}</td>
+          </tr>
+          <tr>
+            <td class="info">PF:</td>
+            <td class="active">{{ pf }}</td>
+          </tr>
+           <tr>
+            <td class="info">Medical Insurance:</td>
+            <td class="active">{{structure.medical_insurance}}</td>
+          </tr>
+           <tr>
+            <td class="info">Gross Salary:</td>
+            <td class="active">{{ gross }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+{% endblock %}

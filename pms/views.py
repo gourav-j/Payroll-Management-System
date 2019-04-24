@@ -7,7 +7,7 @@ from django.contrib.auth.decorators import login_required
 from django.core.mail import send_mail
 from payroll import settings
 from django import forms
-from pms.models import User,Attendance
+from pms.models import User,Attendance, SalaryStructure, UserProfileInfo, Salary
 from django.utils import timezone
 from datetime import date
 from .render import Render
@@ -159,3 +159,36 @@ def gen_attendance_pdf(request):
         return Render.render('pms/attendance_report.html',params)
     else:
         return render(request,'pms/attendance_date_pick.html')
+
+@login_required
+def show_salary(request):
+    user = request.user
+    structure = SalaryStructure.objects.get(user=user)
+    userprofileinfo = UserProfileInfo.objects.get(user=user)
+    position = userprofileinfo.job_desc
+    pf = structure.basic_salary+structure.DA+structure.HRA
+    pf = pf*0.12
+    gross = structure.basic_salary+structure.DA+structure.HRA+structure.conveyance_allowance+structure.bonus-pf-structure.medical_insurance
+    args = {'structure':structure,'today':timezone.now(),'pf':pf,'gross':gross,'position':position}
+    return render(request, 'pms/show_salary.html', args)
+
+@login_required
+def gen_salary_pdf(request):
+    if request.method=='POST':
+        first_date = request.POST.get('fromdate')
+        last_date = request.POST.get('todate')
+        salary = Salary.objects.filter(user = request.user, date__range=(first_date,last_date))
+        structure = SalaryStructure.objects.get(user = request.user)
+        pf = structure.basic_salary+structure.DA+structure.HRA
+        pf = pf*0.12
+        today = timezone.now()
+        params={
+            'salary':salary,
+            'salstr':structure,
+            'pf':pf,
+            'user':request.user,
+            'today':today
+        }
+        return Render.render('pms/salary_report.html',params)
+    else:
+        return render(request,'pms/salary_date_pick.html')

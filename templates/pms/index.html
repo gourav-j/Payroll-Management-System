@@ -6,12 +6,8 @@
     	<h2>Hello admin!
     {% elif user.is_authenticated %}
         <h2>Hello {{ user.first_name }}</h2>
-        <ul>
-            <li><a href = "{% url 'pms:view_profile' %}")> View Profile </a></li>
-            <li><a href = "{% url 'pms:edit_profile' %}")> Update Profile </a></li>
-            <li><a href = "{% url 'pms:attendance' %}")> Mark Attendance </a></li>
-            <li><a href = "{% url 'pms:attendance-report' %}")> Attendance Report</a></li>
-        </ul>
+        <div>
+            <h4> Welcome to IIIT Bangalore</h4>
     {% else %}
         <h2>Register or Login if you'd like to</h2>
     {% endif %}
