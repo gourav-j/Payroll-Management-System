@@ -45,7 +45,7 @@ LOGGING = {
             'format': '%(levelname)s %(message)s'
         },
         'standard': {
-            'format' : "[%(asctime)s] %(levelname)s [%(name)s:%(lineno)s] %(message)s %(filename)s",
+            'format' : "[%(asctime)s] %(levelname)s %(message)s ",
             'datefmt' : "%d/%b/%Y %H:%M:%S"
         },
   },
