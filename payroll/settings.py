@@ -48,12 +48,16 @@ LOGGING = {
             'format' : "[%(asctime)s] %(levelname)s %(message)s ",
             'datefmt' : "%d/%b/%Y %H:%M:%S"
         },
+        'verbose': {
+            'format': '{levelname} {asctime} {module} {process:d} {thread:d} {message}',
+            'style': '{',
+        },
   },
   'handlers': {
         'console': {
             'level': 'INFO',
             'class': 'logging.StreamHandler',
-            'formatter': 'simple'
+            'formatter': 'verbose'
         },
         'file': {
             'level':'INFO',
@@ -61,7 +65,7 @@ LOGGING = {
             'filename': BASE_DIR + "/logfile",
             #'maxBytes': 50000,
             #'backupCount': 2,
-            'formatter': 'standard',
+            'formatter': 'verbose',
         },
         #'logstash': {
         #    'level': 'INFO',
