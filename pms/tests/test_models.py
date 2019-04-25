@@ -2,7 +2,7 @@ from django.test import TestCase
 from django.contrib.auth.models import User
 
 from pms.models import UserProfileInfo, Job
-b# Create your tests here.
+# Create your tests here.
 
 #Test Case for model
 class Test1(TestCase):
