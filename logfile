@@ -583,3 +583,80 @@ INFO 2019-04-26 06:15:24,952 "GET / HTTP/1.1" 200 1840
 INFO 2019-04-26 06:15:30,995 "GET /attendance/ HTTP/1.1" 200 2330
 INFO 2019-04-26 06:15:34,802 "POST /attendance/ HTTP/1.1" 302 0
 INFO 2019-04-26 06:15:34,812 "GET / HTTP/1.1" 200 1840
+INFO 2019-04-26 06:25:14,429 "GET / HTTP/1.1" 200 1840
+INFO 2019-04-26 06:25:16,399 "GET / HTTP/1.1" 200 1840
+INFO 2019-04-26 06:25:17,147 "GET /profile/view HTTP/1.1" 200 3590
+INFO 2019-04-26 06:25:17,821 "GET /profile/edit/ HTTP/1.1" 200 4268
+INFO 2019-04-26 06:25:18,402 "GET /attendance/ HTTP/1.1" 200 2330
+INFO 2019-04-26 06:25:19,623 "GET /attendance/gen-report/ HTTP/1.1" 200 3415
+ERROR 2019-04-26 06:25:20,235 Internal Server Error: /salary/show/
+Traceback (most recent call last):
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/pms/views.py", line 221, in show_salary
+    structure = SalaryStructure.objects.get(user=user)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+pms.models.DoesNotExist: SalaryStructure matching query does not exist.
+ERROR 2019-04-26 06:25:20,235 Internal Server Error: /salary/show/
+Traceback (most recent call last):
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/pms/views.py", line 221, in show_salary
+    structure = SalaryStructure.objects.get(user=user)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+pms.models.DoesNotExist: SalaryStructure matching query does not exist.
+ERROR 2019-04-26 06:25:20,381 "GET /salary/show/ HTTP/1.1" 500 87280
+ERROR 2019-04-26 06:25:43,528 Internal Server Error: /salary/show/
+Traceback (most recent call last):
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/pms/views.py", line 221, in show_salary
+    structure = SalaryStructure.objects.get(user=user)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+pms.models.DoesNotExist: SalaryStructure matching query does not exist.
+ERROR 2019-04-26 06:25:43,528 Internal Server Error: /salary/show/
+Traceback (most recent call last):
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/pms/views.py", line 221, in show_salary
+    structure = SalaryStructure.objects.get(user=user)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/db/models/query.py", line 403, in get
+    self.model._meta.object_name
+pms.models.DoesNotExist: SalaryStructure matching query does not exist.
+ERROR 2019-04-26 06:25:43,557 "GET /salary/show/ HTTP/1.1" 500 87280
+INFO 2019-04-26 06:26:14,881 "GET /salary/gen-report/ HTTP/1.1" 200 3399
