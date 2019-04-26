@@ -20,9 +20,5 @@ def update():
 			sundays = len([1 for i in calendar.monthcalendar(last.year,
                                 last.month) if i[6] != 0])
 			total_days = calendar.monthrange(last.year,last.month)[1]
-			present = Attendance.objects.get(user = u, date__range = (last.replace(day=1),last)).count()
-			present = present/2
-			leaves = total_days - sundays - present
-			leaves = (gross/total_days)*leaves
-			gross = gross - leaves
+			leaves=0
 			Salary.objects.create(user = u,gross_salary = gross, leave = leaves)

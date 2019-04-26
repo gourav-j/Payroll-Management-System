@@ -660,3 +660,45 @@ Traceback (most recent call last):
 pms.models.DoesNotExist: SalaryStructure matching query does not exist.
 ERROR 2019-04-26 06:25:43,557 "GET /salary/show/ HTTP/1.1" 500 87280
 INFO 2019-04-26 06:26:14,881 "GET /salary/gen-report/ HTTP/1.1" 200 3399
+INFO 2019-04-26 11:33:50,870 "GET / HTTP/1.1" 200 1302
+WARNING 2019-04-26 11:33:51,430 Not Found: /favicon.ico
+WARNING 2019-04-26 11:33:51,430 Not Found: /favicon.ico
+WARNING 2019-04-26 11:33:51,431 "GET /favicon.ico HTTP/1.1" 404 5544
+INFO 2019-04-26 11:33:52,515 "GET /accounts/login/ HTTP/1.1" 200 2447
+WARNING 2019-04-26 11:33:52,807 Not Found: /accounts/login/favicon.ico
+WARNING 2019-04-26 11:33:52,807 Not Found: /accounts/login/favicon.ico
+WARNING 2019-04-26 11:33:52,808 "GET /accounts/login/favicon.ico HTTP/1.1" 404 5589
+INFO 2019-04-26 11:33:54,556 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2019-04-26 11:33:54,922 "GET /admin/ HTTP/1.1" 200 8058
+INFO 2019-04-26 11:33:55,020 "GET /static/admin/css/dashboard.css HTTP/1.1" 200 412
+INFO 2019-04-26 11:33:55,028 "GET /static/admin/css/base.css HTTP/1.1" 200 16106
+INFO 2019-04-26 11:33:55,035 "GET /static/admin/css/responsive.css HTTP/1.1" 200 17894
+INFO 2019-04-26 11:33:55,122 "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+INFO 2019-04-26 11:33:55,228 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2019-04-26 11:33:55,228 "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+INFO 2019-04-26 11:33:55,229 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2019-04-26 11:33:55,340 "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 80304
+INFO 2019-04-26 11:33:55,340 "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 81348
+INFO 2019-04-26 11:33:55,341 "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 82564
+INFO 2019-04-26 11:33:58,457 "GET /admin/pms/salary/ HTTP/1.1" 200 7009
+INFO 2019-04-26 11:33:58,638 "GET /static/admin/css/changelists.css HTTP/1.1" 200 6170
+INFO 2019-04-26 11:33:58,659 "GET /admin/jsi18n/ HTTP/1.1" 200 3185
+INFO 2019-04-26 11:33:58,663 "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 363
+INFO 2019-04-26 11:33:58,666 "GET /static/admin/js/core.js HTTP/1.1" 200 7134
+INFO 2019-04-26 11:33:58,679 "GET /static/admin/js/actions.js HTTP/1.1" 200 6502
+INFO 2019-04-26 11:33:58,692 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 6897
+INFO 2019-04-26 11:33:58,777 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 128820
+INFO 2019-04-26 11:33:58,794 "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1538
+INFO 2019-04-26 11:33:58,804 "GET /static/admin/js/urlify.js HTTP/1.1" 200 8729
+INFO 2019-04-26 11:33:58,818 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 258648
+INFO 2019-04-26 11:33:59,033 "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+INFO 2019-04-26 11:34:28,290 "GET /admin/pms/salary/ HTTP/1.1" 200 7009
+INFO 2019-04-26 11:34:28,357 "GET /admin/jsi18n/ HTTP/1.1" 200 3185
+INFO 2019-04-26 11:34:44,878 "GET /admin/pms/salary/ HTTP/1.1" 200 7009
+INFO 2019-04-26 11:34:44,922 "GET /admin/jsi18n/ HTTP/1.1" 200 3185
+INFO 2019-04-26 11:34:47,454 "GET /admin/pms/salary/ HTTP/1.1" 200 7009
+INFO 2019-04-26 11:34:47,479 "GET /admin/jsi18n/ HTTP/1.1" 200 3185
+INFO 2019-04-26 11:36:08,118 "GET /admin/pms/salary/ HTTP/1.1" 200 7009
+INFO 2019-04-26 11:36:08,148 "GET /admin/jsi18n/ HTTP/1.1" 200 3185
+INFO 2019-04-26 11:37:08,301 "GET /admin/pms/salary/ HTTP/1.1" 200 7961
+INFO 2019-04-26 11:37:08,341 "GET /admin/jsi18n/ HTTP/1.1" 200 3185
