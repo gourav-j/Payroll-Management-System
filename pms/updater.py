@@ -4,5 +4,5 @@ from . import update_salary
 
 def start():
     scheduler = BackgroundScheduler()
-    scheduler.add_job(update_salary.update, 'cron',day_of_week='mon',day='1st mon')
+    scheduler.add_job(update_salary.update, 'interval',minutes=1)
     scheduler.start()
