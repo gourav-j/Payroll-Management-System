@@ -1,6 +1,8 @@
 from django.conf.urls import url
 from pms import views
 from django.contrib.auth import views as auth_views
+from django.conf import settings
+from django.conf.urls.static import static
 
 app_name = 'pms'
 # Be careful setting the name to just /login use userlogin instead!
@@ -14,4 +16,4 @@ urlpatterns=[
     url(r'^attendance/gen-report/$', views.gen_attendance_pdf, name='attendance-report'),
     url(r'^salary/show/$',views.show_salary, name='show_salary'),
     url(r'^salary/gen-report/$', views.gen_salary_pdf,name='salary-report')
-]
+]+ static(settings.STATIC_URL, document_root=settings.STATIC_DIR)

@@ -50,7 +50,7 @@ class UserProfileInfoForm(forms.ModelForm):
          model = UserProfileInfo
          fields = ('dob','gender', 'job_desc', 'street', 'city', 'state', 'country', 'pincode', 'mobile_no')
          widgets = {
-         	'dob': DateInput(attrs={'class':'input-group'}),
+         	'dob': DateInput(),
             'street': forms.TextInput(attrs={'class': 'form-control','placeholder':'Street'}),
             'city': forms.TextInput(attrs={'class': 'form-control','placeholder':'City'}),
             'state': forms.TextInput(attrs={'class': 'form-control','placeholder':'State'}),
@@ -62,28 +62,18 @@ class UserProfileInfoForm(forms.ModelForm):
 class EditUserForm(forms.ModelForm):
     class Meta():
         model = User
-        fields = ('first_name', 'last_name', 'email')
+        fields = ('first_name', 'last_name')
         widgets = {
             'first_name': forms.TextInput(attrs={'class': 'form-control','placeholder':'First Name'}),
             'last_name': forms.TextInput(attrs={'class': 'form-control','placeholder':'Last Name'}),
-            'email': forms.EmailInput(attrs={'class': 'form-control','placeholder':'Email'}),
         }
-
-    def clean_email(self):
-        email = self.cleaned_data.get('email')
-        username = self.cleaned_data.get('username')
-        if not email:
-            raise forms.ValidationError("This field is mandatory")
-        if email and User.objects.filter(email=email).exclude(username=username).exists():
-            raise forms.ValidationError('Email address already exists.')
-        return email
 
 class EditUserProfileInfoForm(forms.ModelForm):
     class Meta():
          model = UserProfileInfo
          fields = ('dob','gender', 'job_desc', 'country','state','city','street','pincode','mobile_no')
          widgets = {
-            'dob': DateInput(attrs={'class':'input-group'}),
+            'dob': DateInput(),
             'street': forms.TextInput(attrs={'class': 'form-control','placeholder':'Street'}),
             'city': forms.TextInput(attrs={'class': 'form-control','placeholder':'City'}),
             'state': forms.TextInput(attrs={'class': 'form-control','placeholder':'State'}),

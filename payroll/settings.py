@@ -19,6 +19,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 TEMPLATE_DIR = os.path.join(BASE_DIR,'templates')
 STATIC_DIR = os.path.join(BASE_DIR,'static')
+MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
@@ -49,9 +50,12 @@ LOGGING = {
             'datefmt' : "%d/%b/%Y %H:%M:%S"
         },
         'verbose': {
-            'format': '{levelname} {asctime} {module} {process:d} {thread:d} {message}',
+            'format': '{levelname} {asctime} {message}',
             'style': '{',
         },
+        'my':{
+            'format':'%(levelname)s %(asctime)s %(clientip)s %(user)s %(message)s'
+        }
   },
   'handlers': {
         'console': {
@@ -67,6 +71,12 @@ LOGGING = {
             #'backupCount': 2,
             'formatter': 'verbose',
         },
+        'pmsfile': {
+            'level':'INFO',
+            'class':'logging.handlers.RotatingFileHandler',
+            'filename': 'pmslog',
+            'formatter':'my'
+        }   
         #'logstash': {
         #    'level': 'INFO',
         #    'class': 'logstash.TCPLogstashHandler',
@@ -99,6 +109,10 @@ LOGGING = {
             'level': 'INFO',
             'propagate': True,
         },
+        'pms':{
+            'handlers': ['pmsfile'],
+            'level': 'INFO'
+        }
     }
 }
 
@@ -196,6 +210,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
 STATIC_URL = '/static/'
+MEDIA_URL = '/media/'
 
 EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
 EMAIL_HOST = "smtp.gmail.com"

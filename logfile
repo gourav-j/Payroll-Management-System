@@ -1,1 +1,585 @@
-[25/Apr/2019 03:41:11] INFO [django.server:124] "GET / HTTP/1.1" 200 1185 basehttp.py
+INFO 2019-04-25 23:12:53,568 "GET /profile/view HTTP/1.1" 200 3572
+INFO 2019-04-25 23:12:54,487 "GET /profile/edit/ HTTP/1.1" 200 4271
+INFO 2019-04-25 23:14:52,169 "GET / HTTP/1.1" 200 1839
+INFO 2019-04-25 23:14:53,865 "GET /profile/view HTTP/1.1" 200 3572
+INFO 2019-04-25 23:15:10,628 "GET / HTTP/1.1" 200 1839
+INFO 2019-04-25 23:15:33,472 "GET / HTTP/1.1" 200 1839
+INFO 2019-04-25 23:16:09,655 "GET /profile/edit/ HTTP/1.1" 200 4271
+INFO 2019-04-25 23:16:13,880 "GET / HTTP/1.1" 200 1839
+INFO 2019-04-25 23:16:55,473 "GET / HTTP/1.1" 200 1839
+INFO 2019-04-25 23:18:16,846 "GET / HTTP/1.1" 200 1839
+INFO 2019-04-25 23:18:59,663 "GET /attendance/gen-report/ HTTP/1.1" 200 3415
+INFO 2019-04-25 23:57:28,318 "GET /profile/view HTTP/1.1" 200 3572
+INFO 2019-04-25 23:57:29,427 "GET /profile/edit/ HTTP/1.1" 200 4271
+INFO 2019-04-26 00:00:19,024 "GET /attendance/gen-report/ HTTP/1.1" 200 3415
+INFO 2019-04-26 02:52:26,663 "GET /profile/edit/ HTTP/1.1" 200 4271
+INFO 2019-04-26 03:49:38,232 "GET /profile/edit/ HTTP/1.1" 200 4271
+INFO 2019-04-26 04:00:36,766 "GET /profile/edit/ HTTP/1.1" 200 4271
+INFO 2019-04-26 04:00:56,133 "GET /attendance/gen-report/ HTTP/1.1" 200 3415
+INFO 2019-04-26 04:00:57,140 "GET /attendance/ HTTP/1.1" 200 2330
+INFO 2019-04-26 04:00:58,388 "GET /profile/edit/ HTTP/1.1" 200 4271
+INFO 2019-04-26 04:14:25,386 "GET / HTTP/1.1" 200 1839
+INFO 2019-04-26 04:14:59,969 "GET / HTTP/1.1" 200 1839
+INFO 2019-04-26 04:15:30,676 "GET / HTTP/1.1" 200 1839
+INFO 2019-04-26 04:15:51,146 "GET / HTTP/1.1" 200 1839
+INFO 2019-04-26 04:16:08,993 "GET / HTTP/1.1" 200 1839
+INFO 2019-04-26 04:18:10,786 "GET / HTTP/1.1" 200 1302
+WARNING 2019-04-26 04:18:11,049 Not Found: /favicon.ico
+WARNING 2019-04-26 04:18:11,049 Not Found: /favicon.ico
+WARNING 2019-04-26 04:18:11,050 "GET /favicon.ico HTTP/1.1" 404 5542
+INFO 2019-04-26 04:18:12,610 "GET /signup/ HTTP/1.1" 200 4138
+WARNING 2019-04-26 04:18:12,846 Not Found: /signup/favicon.ico
+WARNING 2019-04-26 04:18:12,846 Not Found: /signup/favicon.ico
+WARNING 2019-04-26 04:18:12,846 "GET /signup/favicon.ico HTTP/1.1" 404 5563
+INFO 2019-04-26 04:18:13,548 "GET / HTTP/1.1" 200 1302
+INFO 2019-04-26 04:20:25,744 "GET /logout/ HTTP/1.1" 302 0
+INFO 2019-04-26 04:20:25,754 "GET / HTTP/1.1" 200 1302
+INFO 2019-04-26 04:23:25,781 "GET /accounts/login/ HTTP/1.1" 200 2447
+WARNING 2019-04-26 04:23:26,290 Not Found: /accounts/login/favicon.ico
+WARNING 2019-04-26 04:23:26,290 Not Found: /accounts/login/favicon.ico
+WARNING 2019-04-26 04:23:26,292 "GET /accounts/login/favicon.ico HTTP/1.1" 404 5589
+INFO 2019-04-26 04:23:36,155 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2019-04-26 04:23:36,161 "GET / HTTP/1.1" 200 1839
+WARNING 2019-04-26 04:23:38,488 Not Found: /favicon.ico
+WARNING 2019-04-26 04:23:38,488 Not Found: /favicon.ico
+WARNING 2019-04-26 04:23:38,488 "GET /favicon.ico HTTP/1.1" 404 5544
+WARNING 2019-04-26 04:23:38,495 Not Found: /favicon.ico
+WARNING 2019-04-26 04:23:38,495 Not Found: /favicon.ico
+WARNING 2019-04-26 04:23:38,495 "GET /favicon.ico HTTP/1.1" 404 5544
+WARNING 2019-04-26 04:23:38,505 Not Found: /favicon.ico
+WARNING 2019-04-26 04:23:38,505 Not Found: /favicon.ico
+WARNING 2019-04-26 04:23:38,506 "GET /favicon.ico HTTP/1.1" 404 5544
+INFO 2019-04-26 04:28:16,966 "GET /logout/ HTTP/1.1" 302 0
+INFO 2019-04-26 04:28:16,974 "GET / HTTP/1.1" 200 1302
+WARNING 2019-04-26 04:28:17,657 Not Found: /favicon.ico
+WARNING 2019-04-26 04:28:17,657 Not Found: /favicon.ico
+WARNING 2019-04-26 04:28:17,657 "GET /favicon.ico HTTP/1.1" 404 5544
+WARNING 2019-04-26 04:28:17,663 Not Found: /favicon.ico
+WARNING 2019-04-26 04:28:17,663 Not Found: /favicon.ico
+WARNING 2019-04-26 04:28:17,663 "GET /favicon.ico HTTP/1.1" 404 5544
+WARNING 2019-04-26 04:28:17,669 Not Found: /favicon.ico
+WARNING 2019-04-26 04:28:17,669 Not Found: /favicon.ico
+WARNING 2019-04-26 04:28:17,669 "GET /favicon.ico HTTP/1.1" 404 5544
+INFO 2019-04-26 04:28:19,031 "GET /signup/ HTTP/1.1" 200 4138
+WARNING 2019-04-26 04:28:19,339 Not Found: /signup/favicon.ico
+WARNING 2019-04-26 04:28:19,339 Not Found: /signup/favicon.ico
+WARNING 2019-04-26 04:28:19,339 "GET /signup/favicon.ico HTTP/1.1" 404 5565
+WARNING 2019-04-26 04:28:19,586 Not Found: /signup/favicon.ico
+WARNING 2019-04-26 04:28:19,586 Not Found: /signup/favicon.ico
+WARNING 2019-04-26 04:28:19,586 "GET /signup/favicon.ico HTTP/1.1" 404 5565
+WARNING 2019-04-26 04:28:19,595 Not Found: /signup/favicon.ico
+WARNING 2019-04-26 04:28:19,595 Not Found: /signup/favicon.ico
+WARNING 2019-04-26 04:28:19,595 "GET /signup/favicon.ico HTTP/1.1" 404 5565
+WARNING 2019-04-26 04:28:19,602 Not Found: /favicon.ico
+WARNING 2019-04-26 04:28:19,602 Not Found: /favicon.ico
+WARNING 2019-04-26 04:28:19,602 "GET /favicon.ico HTTP/1.1" 404 5544
+INFO 2019-04-26 04:30:24,040 "GET /signup/ HTTP/1.1" 200 4118
+INFO 2019-04-26 04:31:21,648 "POST /signup/ HTTP/1.1" 200 2521
+WARNING 2019-04-26 04:31:22,574 Not Found: /signup/favicon.ico
+WARNING 2019-04-26 04:31:22,574 Not Found: /signup/favicon.ico
+WARNING 2019-04-26 04:31:22,574 "GET /signup/favicon.ico HTTP/1.1" 404 5565
+WARNING 2019-04-26 04:31:22,581 Not Found: /signup/favicon.ico
+WARNING 2019-04-26 04:31:22,581 Not Found: /signup/favicon.ico
+WARNING 2019-04-26 04:31:22,581 "GET /signup/favicon.ico HTTP/1.1" 404 5565
+WARNING 2019-04-26 04:31:22,588 Not Found: /favicon.ico
+WARNING 2019-04-26 04:31:22,588 Not Found: /favicon.ico
+WARNING 2019-04-26 04:31:22,588 "GET /favicon.ico HTTP/1.1" 404 5544
+ERROR 2019-04-26 04:34:31,229 Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/pms/views.py", line 31, in index
+    print(request.META('SERVER_NAME'))
+TypeError: 'dict' object is not callable
+ERROR 2019-04-26 04:34:31,229 Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/pms/views.py", line 31, in index
+    print(request.META('SERVER_NAME'))
+TypeError: 'dict' object is not callable
+ERROR 2019-04-26 04:34:31,288 "GET / HTTP/1.1" 500 72554
+WARNING 2019-04-26 04:34:32,078 Not Found: /favicon.ico
+WARNING 2019-04-26 04:34:32,078 Not Found: /favicon.ico
+WARNING 2019-04-26 04:34:32,079 "GET /favicon.ico HTTP/1.1" 404 5544
+INFO 2019-04-26 04:34:51,004 "GET / HTTP/1.1" 200 1302
+WARNING 2019-04-26 04:34:51,548 Not Found: /favicon.ico
+WARNING 2019-04-26 04:34:51,548 Not Found: /favicon.ico
+WARNING 2019-04-26 04:34:51,549 "GET /favicon.ico HTTP/1.1" 404 5544
+WARNING 2019-04-26 04:34:51,555 Not Found: /favicon.ico
+WARNING 2019-04-26 04:34:51,555 Not Found: /favicon.ico
+WARNING 2019-04-26 04:34:51,555 "GET /favicon.ico HTTP/1.1" 404 5544
+WARNING 2019-04-26 04:34:51,561 Not Found: /favicon.ico
+WARNING 2019-04-26 04:34:51,561 Not Found: /favicon.ico
+WARNING 2019-04-26 04:34:51,561 "GET /favicon.ico HTTP/1.1" 404 5544
+INFO 2019-04-26 04:35:48,733 "GET / HTTP/1.1" 200 1302
+WARNING 2019-04-26 04:35:49,502 Not Found: /favicon.ico
+WARNING 2019-04-26 04:35:49,502 Not Found: /favicon.ico
+WARNING 2019-04-26 04:35:49,502 "GET /favicon.ico HTTP/1.1" 404 5544
+WARNING 2019-04-26 04:35:49,517 Not Found: /favicon.ico
+WARNING 2019-04-26 04:35:49,517 Not Found: /favicon.ico
+WARNING 2019-04-26 04:35:49,519 "GET /favicon.ico HTTP/1.1" 404 5544
+WARNING 2019-04-26 04:35:49,528 Not Found: /favicon.ico
+WARNING 2019-04-26 04:35:49,528 Not Found: /favicon.ico
+WARNING 2019-04-26 04:35:49,528 "GET /favicon.ico HTTP/1.1" 404 5544
+INFO 2019-04-26 04:37:48,749 "GET / HTTP/1.1" 200 1302
+WARNING 2019-04-26 04:37:49,355 Not Found: /favicon.ico
+WARNING 2019-04-26 04:37:49,355 Not Found: /favicon.ico
+WARNING 2019-04-26 04:37:49,356 "GET /favicon.ico HTTP/1.1" 404 5544
+WARNING 2019-04-26 04:37:49,362 Not Found: /favicon.ico
+WARNING 2019-04-26 04:37:49,362 Not Found: /favicon.ico
+WARNING 2019-04-26 04:37:49,362 "GET /favicon.ico HTTP/1.1" 404 5544
+WARNING 2019-04-26 04:37:49,367 Not Found: /favicon.ico
+WARNING 2019-04-26 04:37:49,367 Not Found: /favicon.ico
+WARNING 2019-04-26 04:37:49,368 "GET /favicon.ico HTTP/1.1" 404 5544
+INFO 2019-04-26 04:37:55,349 code 400, message Bad request syntax ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03\xad\x82ä\x1e\\§T¨±\x1d´(ß7p2\x10ä¸\x8b\x8að\x07\x83á\x8aªã5îHª ~\xad«ÆÿAÌ¹\x9a\x86ð\x10s¾\x93\x0c¿\x85\x92\x7f\x1e\x9ejì\x1c\x1b\x99bþ\x0eÕú\x00"jj\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x00')
+ERROR 2019-04-26 04:37:55,349 You're accessing the development server over HTTPS, but it only supports HTTP.
+
+INFO 2019-04-26 04:37:55,395 code 400, message Bad request syntax ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03\x0e&l1:6À\x84°;).M²\x8e°öQf¨\x98^\x83k¢ã®^\x9fw\x97Ä Âm\x84ÁM$\x15\x80§´Ö\x1d&°\x00\\\x01Î\x1e\x07\x99\x98½ñî[ò%h~Ót\x00"ºº\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x00')
+INFO 2019-04-26 04:37:55,395 code 400, message Bad request version ('1\x10Æ\x19Ê±')
+ERROR 2019-04-26 04:37:55,395 You're accessing the development server over HTTPS, but it only supports HTTP.
+
+INFO 2019-04-26 04:37:55,395 code 400, message Bad request version ('ÊÊÀ+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x00')
+ERROR 2019-04-26 04:37:55,396 You're accessing the development server over HTTPS, but it only supports HTTP.
+
+ERROR 2019-04-26 04:37:55,396 You're accessing the development server over HTTPS, but it only supports HTTP.
+
+INFO 2019-04-26 04:38:01,868 "GET / HTTP/1.1" 200 1302
+WARNING 2019-04-26 04:38:02,839 Not Found: /favicon.ico
+WARNING 2019-04-26 04:38:02,839 Not Found: /favicon.ico
+WARNING 2019-04-26 04:38:02,839 "GET /favicon.ico HTTP/1.1" 404 5544
+WARNING 2019-04-26 04:38:02,846 Not Found: /favicon.ico
+WARNING 2019-04-26 04:38:02,846 Not Found: /favicon.ico
+WARNING 2019-04-26 04:38:02,846 "GET /favicon.ico HTTP/1.1" 404 5544
+WARNING 2019-04-26 04:38:02,853 Not Found: /favicon.ico
+WARNING 2019-04-26 04:38:02,853 Not Found: /favicon.ico
+WARNING 2019-04-26 04:38:02,853 "GET /favicon.ico HTTP/1.1" 404 5544
+INFO 2019-04-26 04:40:38,346 "GET /signup/ HTTP/1.1" 200 4118
+WARNING 2019-04-26 04:40:38,878 Not Found: /signup/favicon.ico
+WARNING 2019-04-26 04:40:38,878 Not Found: /signup/favicon.ico
+WARNING 2019-04-26 04:40:38,879 "GET /signup/favicon.ico HTTP/1.1" 404 5565
+WARNING 2019-04-26 04:40:38,887 Not Found: /signup/favicon.ico
+WARNING 2019-04-26 04:40:38,887 Not Found: /signup/favicon.ico
+WARNING 2019-04-26 04:40:38,888 "GET /signup/favicon.ico HTTP/1.1" 404 5565
+WARNING 2019-04-26 04:40:38,893 Not Found: /favicon.ico
+WARNING 2019-04-26 04:40:38,893 Not Found: /favicon.ico
+WARNING 2019-04-26 04:40:38,894 "GET /favicon.ico HTTP/1.1" 404 5544
+INFO 2019-04-26 04:41:51,894 "POST /signup/ HTTP/1.1" 200 2521
+WARNING 2019-04-26 04:41:52,517 Not Found: /signup/favicon.ico
+WARNING 2019-04-26 04:41:52,517 Not Found: /signup/favicon.ico
+WARNING 2019-04-26 04:41:52,517 "GET /signup/favicon.ico HTTP/1.1" 404 5565
+WARNING 2019-04-26 04:41:52,526 Not Found: /signup/favicon.ico
+WARNING 2019-04-26 04:41:52,526 Not Found: /signup/favicon.ico
+WARNING 2019-04-26 04:41:52,526 "GET /signup/favicon.ico HTTP/1.1" 404 5565
+WARNING 2019-04-26 04:41:52,534 Not Found: /favicon.ico
+WARNING 2019-04-26 04:41:52,534 Not Found: /favicon.ico
+WARNING 2019-04-26 04:41:52,535 "GET /favicon.ico HTTP/1.1" 404 5544
+INFO 2019-04-26 04:42:21,565 "GET /signup/ HTTP/1.1" 200 4118
+WARNING 2019-04-26 04:42:22,311 Not Found: /signup/favicon.ico
+WARNING 2019-04-26 04:42:22,311 Not Found: /signup/favicon.ico
+WARNING 2019-04-26 04:42:22,311 "GET /signup/favicon.ico HTTP/1.1" 404 5565
+WARNING 2019-04-26 04:42:22,321 Not Found: /signup/favicon.ico
+WARNING 2019-04-26 04:42:22,321 Not Found: /signup/favicon.ico
+WARNING 2019-04-26 04:42:22,321 "GET /signup/favicon.ico HTTP/1.1" 404 5565
+WARNING 2019-04-26 04:42:22,328 Not Found: /favicon.ico
+WARNING 2019-04-26 04:42:22,328 Not Found: /favicon.ico
+WARNING 2019-04-26 04:42:22,328 "GET /favicon.ico HTTP/1.1" 404 5544
+INFO 2019-04-26 04:43:23,728 "GET /accounts/login/ HTTP/1.1" 200 2447
+WARNING 2019-04-26 04:43:24,175 Not Found: /accounts/login/favicon.ico
+WARNING 2019-04-26 04:43:24,175 Not Found: /accounts/login/favicon.ico
+WARNING 2019-04-26 04:43:24,175 "GET /accounts/login/favicon.ico HTTP/1.1" 404 5587
+INFO 2019-04-26 04:43:30,913 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2019-04-26 04:43:30,977 "GET /admin/ HTTP/1.1" 200 7938
+INFO 2019-04-26 04:43:31,044 "GET /static/admin/css/dashboard.css HTTP/1.1" 200 412
+INFO 2019-04-26 04:43:31,050 "GET /static/admin/css/base.css HTTP/1.1" 200 16106
+INFO 2019-04-26 04:43:31,056 "GET /static/admin/css/responsive.css HTTP/1.1" 200 17894
+INFO 2019-04-26 04:43:31,199 "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+INFO 2019-04-26 04:43:31,255 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2019-04-26 04:43:31,261 "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+INFO 2019-04-26 04:43:31,265 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2019-04-26 04:43:31,467 "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 81348
+INFO 2019-04-26 04:43:31,468 "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 80304
+INFO 2019-04-26 04:43:31,469 "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 82564
+WARNING 2019-04-26 04:43:31,713 Not Found: /favicon.ico
+WARNING 2019-04-26 04:43:31,713 Not Found: /favicon.ico
+WARNING 2019-04-26 04:43:31,713 "GET /favicon.ico HTTP/1.1" 404 5542
+INFO 2019-04-26 04:43:32,818 "GET /admin/pms/job/ HTTP/1.1" 200 4336
+INFO 2019-04-26 04:43:32,900 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 6897
+INFO 2019-04-26 04:43:32,902 "GET /static/admin/css/changelists.css HTTP/1.1" 200 6170
+INFO 2019-04-26 04:43:32,909 "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 363
+INFO 2019-04-26 04:43:32,909 "GET /static/admin/js/core.js HTTP/1.1" 200 7134
+INFO 2019-04-26 04:43:32,919 "GET /static/admin/js/actions.js HTTP/1.1" 200 6502
+INFO 2019-04-26 04:43:32,932 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 128820
+INFO 2019-04-26 04:43:32,948 "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1538
+INFO 2019-04-26 04:43:32,957 "GET /static/admin/js/urlify.js HTTP/1.1" 200 8729
+INFO 2019-04-26 04:43:32,967 "GET /admin/jsi18n/ HTTP/1.1" 200 3185
+INFO 2019-04-26 04:43:32,981 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 258648
+INFO 2019-04-26 04:43:33,076 "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+WARNING 2019-04-26 04:43:33,302 Not Found: /favicon.ico
+WARNING 2019-04-26 04:43:33,302 Not Found: /favicon.ico
+WARNING 2019-04-26 04:43:33,302 "GET /favicon.ico HTTP/1.1" 404 5542
+INFO 2019-04-26 04:43:35,682 "GET /admin/pms/job/add/ HTTP/1.1" 200 4009
+INFO 2019-04-26 04:43:35,704 "GET /static/admin/css/forms.css HTTP/1.1" 200 8173
+INFO 2019-04-26 04:43:35,705 "GET /admin/jsi18n/ HTTP/1.1" 200 3185
+INFO 2019-04-26 04:43:35,711 "GET /static/admin/js/change_form.js HTTP/1.1" 200 712
+INFO 2019-04-26 04:43:35,713 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 495
+INFO 2019-04-26 04:43:35,805 "GET /static/admin/css/widgets.css HTTP/1.1" 200 10340
+INFO 2019-04-26 04:43:38,995 "POST /admin/pms/job/add/ HTTP/1.1" 302 0
+INFO 2019-04-26 04:43:39,049 "GET /admin/pms/job/ HTTP/1.1" 200 4729
+INFO 2019-04-26 04:43:39,076 "GET /admin/jsi18n/ HTTP/1.1" 200 3185
+INFO 2019-04-26 04:43:39,219 "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+INFO 2019-04-26 04:43:40,128 "GET /admin/pms/job/add/ HTTP/1.1" 200 4009
+INFO 2019-04-26 04:43:40,185 "GET /admin/jsi18n/ HTTP/1.1" 200 3185
+INFO 2019-04-26 04:43:49,983 "POST /admin/pms/job/add/ HTTP/1.1" 302 0
+INFO 2019-04-26 04:43:50,003 "GET /admin/pms/job/add/ HTTP/1.1" 200 4220
+INFO 2019-04-26 04:43:50,033 "GET /admin/jsi18n/ HTTP/1.1" 200 3185
+INFO 2019-04-26 04:43:58,799 "POST /admin/pms/job/add/ HTTP/1.1" 302 0
+INFO 2019-04-26 04:43:58,820 "GET /admin/pms/job/add/ HTTP/1.1" 200 4210
+INFO 2019-04-26 04:43:58,850 "GET /admin/jsi18n/ HTTP/1.1" 200 3185
+INFO 2019-04-26 04:44:05,330 "POST /admin/pms/job/add/ HTTP/1.1" 302 0
+INFO 2019-04-26 04:44:05,353 "GET /admin/pms/job/add/ HTTP/1.1" 200 4210
+INFO 2019-04-26 04:44:05,391 "GET /admin/jsi18n/ HTTP/1.1" 200 3185
+INFO 2019-04-26 04:44:14,085 "POST /admin/pms/job/add/ HTTP/1.1" 302 0
+INFO 2019-04-26 04:44:14,106 "GET /admin/pms/job/add/ HTTP/1.1" 200 4211
+INFO 2019-04-26 04:44:14,144 "GET /admin/jsi18n/ HTTP/1.1" 200 3185
+INFO 2019-04-26 04:44:17,872 "GET /admin/logout/ HTTP/1.1" 200 1219
+INFO 2019-04-26 04:44:25,828 "GET /signup/ HTTP/1.1" 200 4313
+WARNING 2019-04-26 04:44:27,191 Not Found: /signup/favicon.ico
+WARNING 2019-04-26 04:44:27,191 Not Found: /signup/favicon.ico
+WARNING 2019-04-26 04:44:27,191 "GET /signup/favicon.ico HTTP/1.1" 404 5565
+WARNING 2019-04-26 04:44:27,206 Not Found: /signup/favicon.ico
+WARNING 2019-04-26 04:44:27,206 Not Found: /signup/favicon.ico
+WARNING 2019-04-26 04:44:27,206 "GET /signup/favicon.ico HTTP/1.1" 404 5565
+WARNING 2019-04-26 04:44:27,214 Not Found: /favicon.ico
+WARNING 2019-04-26 04:44:27,214 Not Found: /favicon.ico
+WARNING 2019-04-26 04:44:27,214 "GET /favicon.ico HTTP/1.1" 404 5544
+INFO 2019-04-26 04:45:45,167 "POST /signup/ HTTP/1.1" 200 2521
+WARNING 2019-04-26 04:45:45,853 Not Found: /signup/favicon.ico
+WARNING 2019-04-26 04:45:45,853 Not Found: /signup/favicon.ico
+WARNING 2019-04-26 04:45:45,854 "GET /signup/favicon.ico HTTP/1.1" 404 5565
+WARNING 2019-04-26 04:45:45,860 Not Found: /signup/favicon.ico
+WARNING 2019-04-26 04:45:45,860 Not Found: /signup/favicon.ico
+WARNING 2019-04-26 04:45:45,860 "GET /signup/favicon.ico HTTP/1.1" 404 5565
+WARNING 2019-04-26 04:45:45,866 Not Found: /favicon.ico
+WARNING 2019-04-26 04:45:45,866 Not Found: /favicon.ico
+WARNING 2019-04-26 04:45:45,866 "GET /favicon.ico HTTP/1.1" 404 5544
+INFO 2019-04-26 04:48:38,732 "GET /signup/ HTTP/1.1" 200 4313
+WARNING 2019-04-26 04:48:39,355 Not Found: /signup/favicon.ico
+WARNING 2019-04-26 04:48:39,355 Not Found: /signup/favicon.ico
+WARNING 2019-04-26 04:48:39,356 "GET /signup/favicon.ico HTTP/1.1" 404 5565
+WARNING 2019-04-26 04:48:39,364 Not Found: /signup/favicon.ico
+WARNING 2019-04-26 04:48:39,364 Not Found: /signup/favicon.ico
+WARNING 2019-04-26 04:48:39,364 "GET /signup/favicon.ico HTTP/1.1" 404 5565
+WARNING 2019-04-26 04:48:39,371 Not Found: /favicon.ico
+WARNING 2019-04-26 04:48:39,371 Not Found: /favicon.ico
+WARNING 2019-04-26 04:48:39,371 "GET /favicon.ico HTTP/1.1" 404 5544
+INFO 2019-04-26 04:50:57,793 "POST /signup/ HTTP/1.1" 200 2521
+WARNING 2019-04-26 04:50:58,522 Not Found: /signup/favicon.ico
+WARNING 2019-04-26 04:50:58,522 Not Found: /signup/favicon.ico
+WARNING 2019-04-26 04:50:58,523 "GET /signup/favicon.ico HTTP/1.1" 404 5565
+WARNING 2019-04-26 04:50:58,528 Not Found: /signup/favicon.ico
+WARNING 2019-04-26 04:50:58,528 Not Found: /signup/favicon.ico
+WARNING 2019-04-26 04:50:58,529 "GET /signup/favicon.ico HTTP/1.1" 404 5565
+WARNING 2019-04-26 04:50:58,535 Not Found: /favicon.ico
+WARNING 2019-04-26 04:50:58,535 Not Found: /favicon.ico
+WARNING 2019-04-26 04:50:58,535 "GET /favicon.ico HTTP/1.1" 404 5544
+INFO 2019-04-26 04:52:42,309 "GET /signup/ HTTP/1.1" 200 4313
+WARNING 2019-04-26 04:52:42,927 Not Found: /signup/favicon.ico
+WARNING 2019-04-26 04:52:42,927 Not Found: /signup/favicon.ico
+WARNING 2019-04-26 04:52:42,928 "GET /signup/favicon.ico HTTP/1.1" 404 5565
+WARNING 2019-04-26 04:52:42,934 Not Found: /signup/favicon.ico
+WARNING 2019-04-26 04:52:42,934 Not Found: /signup/favicon.ico
+WARNING 2019-04-26 04:52:42,935 "GET /signup/favicon.ico HTTP/1.1" 404 5565
+WARNING 2019-04-26 04:52:42,941 Not Found: /favicon.ico
+WARNING 2019-04-26 04:52:42,941 Not Found: /favicon.ico
+WARNING 2019-04-26 04:52:42,942 "GET /favicon.ico HTTP/1.1" 404 5544
+INFO 2019-04-26 04:53:20,021 "POST /signup/ HTTP/1.1" 200 2521
+WARNING 2019-04-26 04:53:20,578 Not Found: /signup/favicon.ico
+WARNING 2019-04-26 04:53:20,578 Not Found: /signup/favicon.ico
+WARNING 2019-04-26 04:53:20,579 "GET /signup/favicon.ico HTTP/1.1" 404 5565
+WARNING 2019-04-26 04:53:20,585 Not Found: /signup/favicon.ico
+WARNING 2019-04-26 04:53:20,585 Not Found: /signup/favicon.ico
+WARNING 2019-04-26 04:53:20,585 "GET /signup/favicon.ico HTTP/1.1" 404 5565
+WARNING 2019-04-26 04:53:20,592 Not Found: /favicon.ico
+WARNING 2019-04-26 04:53:20,592 Not Found: /favicon.ico
+WARNING 2019-04-26 04:53:20,592 "GET /favicon.ico HTTP/1.1" 404 5544
+INFO 2019-04-26 04:53:22,586 "GET /signup/ HTTP/1.1" 200 4313
+WARNING 2019-04-26 04:53:23,110 Not Found: /signup/favicon.ico
+WARNING 2019-04-26 04:53:23,110 Not Found: /signup/favicon.ico
+WARNING 2019-04-26 04:53:23,111 "GET /signup/favicon.ico HTTP/1.1" 404 5565
+WARNING 2019-04-26 04:53:23,118 Not Found: /signup/favicon.ico
+WARNING 2019-04-26 04:53:23,118 Not Found: /signup/favicon.ico
+WARNING 2019-04-26 04:53:23,119 "GET /signup/favicon.ico HTTP/1.1" 404 5565
+WARNING 2019-04-26 04:53:23,126 Not Found: /favicon.ico
+WARNING 2019-04-26 04:53:23,126 Not Found: /favicon.ico
+WARNING 2019-04-26 04:53:23,126 "GET /favicon.ico HTTP/1.1" 404 5544
+INFO 2019-04-26 04:53:42,838 "POST /signup/ HTTP/1.1" 200 4580
+ERROR 2019-04-26 04:56:07,261 Internal Server Error: /signup/
+Traceback (most recent call last):
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/pms/views.py", line 75, in signup
+    log.warning('"POST Signup form errors '+ user_form.errors+' '+profile_form.errors+'"', extra=d)
+TypeError: must be str, not ErrorDict
+ERROR 2019-04-26 04:56:07,261 Internal Server Error: /signup/
+Traceback (most recent call last):
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/pms/views.py", line 75, in signup
+    log.warning('"POST Signup form errors '+ user_form.errors+' '+profile_form.errors+'"', extra=d)
+TypeError: must be str, not ErrorDict
+ERROR 2019-04-26 04:56:07,324 "POST /signup/ HTTP/1.1" 500 76657
+WARNING 2019-04-26 04:56:08,022 Not Found: /favicon.ico
+WARNING 2019-04-26 04:56:08,022 Not Found: /favicon.ico
+WARNING 2019-04-26 04:56:08,023 "GET /favicon.ico HTTP/1.1" 404 5544
+WARNING 2019-04-26 04:56:39,225 Not Found: /signup/favicon.ico
+WARNING 2019-04-26 04:56:39,225 Not Found: /signup/favicon.ico
+WARNING 2019-04-26 04:56:39,226 "GET /signup/favicon.ico HTTP/1.1" 404 5565
+WARNING 2019-04-26 04:56:39,234 Not Found: /signup/favicon.ico
+WARNING 2019-04-26 04:56:39,234 Not Found: /signup/favicon.ico
+WARNING 2019-04-26 04:56:39,234 "GET /signup/favicon.ico HTTP/1.1" 404 5565
+WARNING 2019-04-26 04:56:39,241 Not Found: /favicon.ico
+WARNING 2019-04-26 04:56:39,241 Not Found: /favicon.ico
+WARNING 2019-04-26 04:56:39,241 "GET /favicon.ico HTTP/1.1" 404 5544
+INFO 2019-04-26 05:03:58,090 "GET /signup/ HTTP/1.1" 200 4313
+WARNING 2019-04-26 05:03:58,774 Not Found: /signup/favicon.ico
+WARNING 2019-04-26 05:03:58,774 Not Found: /signup/favicon.ico
+WARNING 2019-04-26 05:03:58,774 "GET /signup/favicon.ico HTTP/1.1" 404 5565
+WARNING 2019-04-26 05:03:58,784 Not Found: /signup/favicon.ico
+WARNING 2019-04-26 05:03:58,784 Not Found: /signup/favicon.ico
+WARNING 2019-04-26 05:03:58,784 "GET /signup/favicon.ico HTTP/1.1" 404 5565
+WARNING 2019-04-26 05:03:58,790 Not Found: /favicon.ico
+WARNING 2019-04-26 05:03:58,790 Not Found: /favicon.ico
+WARNING 2019-04-26 05:03:58,790 "GET /favicon.ico HTTP/1.1" 404 5544
+INFO 2019-04-26 05:05:27,575 "POST /signup/ HTTP/1.1" 200 4649
+INFO 2019-04-26 05:07:56,771 "GET /accounts/login/ HTTP/1.1" 200 2447
+INFO 2019-04-26 05:08:06,792 "POST /accounts/login/ HTTP/1.1" 200 2520
+INFO 2019-04-26 05:08:14,727 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2019-04-26 05:08:14,739 "GET / HTTP/1.1" 200 1839
+WARNING 2019-04-26 05:08:15,142 Not Found: /favicon.ico
+WARNING 2019-04-26 05:08:15,142 Not Found: /favicon.ico
+WARNING 2019-04-26 05:08:15,142 "GET /favicon.ico HTTP/1.1" 404 5544
+WARNING 2019-04-26 05:08:15,149 Not Found: /favicon.ico
+WARNING 2019-04-26 05:08:15,149 Not Found: /favicon.ico
+WARNING 2019-04-26 05:08:15,149 "GET /favicon.ico HTTP/1.1" 404 5544
+WARNING 2019-04-26 05:08:15,155 Not Found: /favicon.ico
+WARNING 2019-04-26 05:08:15,155 Not Found: /favicon.ico
+WARNING 2019-04-26 05:08:15,155 "GET /favicon.ico HTTP/1.1" 404 5544
+INFO 2019-04-26 05:14:29,667 "GET /profile/view HTTP/1.1" 200 3572
+WARNING 2019-04-26 05:14:30,334 Not Found: /profile/favicon.ico
+WARNING 2019-04-26 05:14:30,334 Not Found: /profile/favicon.ico
+WARNING 2019-04-26 05:14:30,335 "GET /profile/favicon.ico HTTP/1.1" 404 5568
+WARNING 2019-04-26 05:14:30,351 Not Found: /profile/favicon.ico
+WARNING 2019-04-26 05:14:30,351 Not Found: /profile/favicon.ico
+WARNING 2019-04-26 05:14:30,352 "GET /profile/favicon.ico HTTP/1.1" 404 5568
+WARNING 2019-04-26 05:14:30,365 Not Found: /favicon.ico
+WARNING 2019-04-26 05:14:30,365 Not Found: /favicon.ico
+WARNING 2019-04-26 05:14:30,366 "GET /favicon.ico HTTP/1.1" 404 5544
+INFO 2019-04-26 05:14:31,681 "GET /profile/edit/ HTTP/1.1" 200 4446
+WARNING 2019-04-26 05:14:32,104 Not Found: /profile/edit/favicon.ico
+WARNING 2019-04-26 05:14:32,104 Not Found: /profile/edit/favicon.ico
+WARNING 2019-04-26 05:14:32,105 "GET /profile/edit/favicon.ico HTTP/1.1" 404 5583
+WARNING 2019-04-26 05:14:32,113 Not Found: /profile/edit/favicon.ico
+WARNING 2019-04-26 05:14:32,113 Not Found: /profile/edit/favicon.ico
+WARNING 2019-04-26 05:14:32,113 "GET /profile/edit/favicon.ico HTTP/1.1" 404 5583
+WARNING 2019-04-26 05:14:32,121 Not Found: /favicon.ico
+WARNING 2019-04-26 05:14:32,121 Not Found: /favicon.ico
+WARNING 2019-04-26 05:14:32,121 "GET /favicon.ico HTTP/1.1" 404 5544
+INFO 2019-04-26 05:14:34,284 "POST /profile/edit/ HTTP/1.1" 200 4512
+INFO 2019-04-26 05:15:13,799 "POST /profile/edit/ HTTP/1.1" 200 4512
+INFO 2019-04-26 05:17:10,482 "POST /profile/edit/ HTTP/1.1" 200 4512
+INFO 2019-04-26 05:17:28,716 "POST /profile/edit/ HTTP/1.1" 200 4512
+INFO 2019-04-26 05:18:35,834 "POST /profile/edit/ HTTP/1.1" 200 4512
+INFO 2019-04-26 05:18:56,309 "POST /profile/edit/ HTTP/1.1" 200 4512
+INFO 2019-04-26 05:20:01,487 "POST /profile/edit/ HTTP/1.1" 200 4512
+INFO 2019-04-26 05:21:13,976 "GET /profile/edit/ HTTP/1.1" 200 4264
+INFO 2019-04-26 05:21:16,993 "POST /profile/edit/ HTTP/1.1" 302 0
+INFO 2019-04-26 05:21:17,004 "GET / HTTP/1.1" 200 1839
+INFO 2019-04-26 05:21:51,231 "GET /profile/edit/ HTTP/1.1" 200 4264
+ERROR 2019-04-26 05:21:53,249 Internal Server Error: /profile/edit/
+Traceback (most recent call last):
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/pms/views.py", line 141, in user_edit
+    return redirect(reverse('view_profile'))
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/urls/base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/urls/resolvers.py", line 634, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'view_profile' not found. 'view_profile' is not a valid view function or pattern name.
+ERROR 2019-04-26 05:21:53,249 Internal Server Error: /profile/edit/
+Traceback (most recent call last):
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/pms/views.py", line 141, in user_edit
+    return redirect(reverse('view_profile'))
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/urls/base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/urls/resolvers.py", line 634, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'view_profile' not found. 'view_profile' is not a valid view function or pattern name.
+ERROR 2019-04-26 05:21:53,292 "POST /profile/edit/ HTTP/1.1" 500 91946
+ERROR 2019-04-26 05:23:09,690 Internal Server Error: /profile/edit/
+Traceback (most recent call last):
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/pms/views.py", line 146, in user_edit
+    return redirect(reverse('view_profile'))
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/urls/base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/urls/resolvers.py", line 634, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'view_profile' not found. 'view_profile' is not a valid view function or pattern name.
+ERROR 2019-04-26 05:23:09,690 Internal Server Error: /profile/edit/
+Traceback (most recent call last):
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/pms/views.py", line 146, in user_edit
+    return redirect(reverse('view_profile'))
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/urls/base.py", line 90, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/urls/resolvers.py", line 634, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'view_profile' not found. 'view_profile' is not a valid view function or pattern name.
+ERROR 2019-04-26 05:23:09,729 "POST /profile/edit/ HTTP/1.1" 500 91946
+INFO 2019-04-26 05:23:38,866 "POST /profile/edit/ HTTP/1.1" 200 3572
+INFO 2019-04-26 05:23:44,265 "GET / HTTP/1.1" 200 1839
+INFO 2019-04-26 05:24:42,559 "GET /profile/view HTTP/1.1" 200 3572
+INFO 2019-04-26 05:24:43,308 "GET /profile/view HTTP/1.1" 200 3572
+INFO 2019-04-26 05:24:43,618 "GET /profile/view HTTP/1.1" 200 3572
+INFO 2019-04-26 05:24:43,893 "GET /profile/view HTTP/1.1" 200 3572
+INFO 2019-04-26 05:24:44,427 "GET /profile/view HTTP/1.1" 200 3572
+INFO 2019-04-26 05:29:02,817 "GET /attendance/ HTTP/1.1" 200 2330
+INFO 2019-04-26 05:29:04,676 "POST /attendance/ HTTP/1.1" 302 0
+INFO 2019-04-26 05:29:04,685 "GET / HTTP/1.1" 200 1839
+INFO 2019-04-26 05:29:19,362 "GET /attendance/ HTTP/1.1" 200 2330
+INFO 2019-04-26 05:29:22,461 "POST /attendance/ HTTP/1.1" 302 0
+INFO 2019-04-26 05:29:22,476 "GET / HTTP/1.1" 200 1839
+INFO 2019-04-26 05:32:54,218 "GET /attendance/ HTTP/1.1" 200 2128
+INFO 2019-04-26 05:35:32,903 "GET /attendance/gen-report/ HTTP/1.1" 200 3415
+ERROR 2019-04-26 05:35:39,578 Internal Server Error: /attendance/gen-report/
+Traceback (most recent call last):
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/pms/views.py", line 211, in gen_attendance_pdf
+    log.info('"POST '+user.username+' generated attendance report "', extra=d)
+NameError: name 'user' is not defined
+ERROR 2019-04-26 05:35:39,578 Internal Server Error: /attendance/gen-report/
+Traceback (most recent call last):
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/myvenv2/lib/python3.6/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/gouravj/Desktop/Payroll Management System/payroll/pms/views.py", line 211, in gen_attendance_pdf
+    log.info('"POST '+user.username+' generated attendance report "', extra=d)
+NameError: name 'user' is not defined
+ERROR 2019-04-26 05:35:39,631 "POST /attendance/gen-report/ HTTP/1.1" 500 80879
+INFO 2019-04-26 05:36:04,987 "POST /attendance/gen-report/ HTTP/1.1" 200 3283
+INFO 2019-04-26 05:37:39,967 "GET /salary/show/ HTTP/1.1" 200 3228
+INFO 2019-04-26 05:37:41,071 "GET /salary/show/ HTTP/1.1" 200 3228
+INFO 2019-04-26 05:37:41,375 "GET /salary/show/ HTTP/1.1" 200 3228
+INFO 2019-04-26 05:37:41,837 "GET /salary/show/ HTTP/1.1" 200 3228
+INFO 2019-04-26 05:37:42,150 "GET /salary/show/ HTTP/1.1" 200 3228
+INFO 2019-04-26 05:37:42,455 "GET /salary/show/ HTTP/1.1" 200 3228
+INFO 2019-04-26 05:38:02,328 "GET /salary/show/ HTTP/1.1" 200 3207
+INFO 2019-04-26 05:38:55,887 "GET /salary/gen-report/ HTTP/1.1" 200 3399
+INFO 2019-04-26 05:38:59,789 "POST /salary/gen-report/ HTTP/1.1" 200 4303
+INFO 2019-04-26 05:58:37,506 "GET /profile/edit/ HTTP/1.1" 200 4264
+INFO 2019-04-26 06:05:16,139 "GET /attendance/gen-report/ HTTP/1.1" 200 3415
+INFO 2019-04-26 06:05:17,390 "GET /attendance/ HTTP/1.1" 200 2128
+INFO 2019-04-26 06:05:19,275 "GET / HTTP/1.1" 200 1839
+INFO 2019-04-26 06:05:19,278 "GET /profile/view HTTP/1.1" 200 3572
+INFO 2019-04-26 06:05:21,058 "GET /salary/show/ HTTP/1.1" 200 3207
+INFO 2019-04-26 06:05:21,241 "GET /salary/gen-report/ HTTP/1.1" 200 3399
+INFO 2019-04-26 06:14:01,054 "GET /logout/ HTTP/1.1" 302 0
+INFO 2019-04-26 06:14:01,059 "GET / HTTP/1.1" 200 1302
+INFO 2019-04-26 06:14:02,730 "GET /accounts/login/ HTTP/1.1" 200 2447
+INFO 2019-04-26 06:14:16,042 "POST /accounts/login/ HTTP/1.1" 200 2520
+INFO 2019-04-26 06:14:31,323 "POST /accounts/login/ HTTP/1.1" 200 2520
+INFO 2019-04-26 06:14:49,366 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2019-04-26 06:14:49,404 "GET /admin/ HTTP/1.1" 200 8058
+INFO 2019-04-26 06:14:49,460 "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+INFO 2019-04-26 06:14:49,462 "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2019-04-26 06:14:49,691 "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2019-04-26 06:14:50,228 "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+INFO 2019-04-26 06:14:50,641 "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+INFO 2019-04-26 06:14:50,641 "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+INFO 2019-04-26 06:14:50,686 "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+INFO 2019-04-26 06:14:50,872 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+INFO 2019-04-26 06:14:50,873 "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 304 0
+INFO 2019-04-26 06:14:50,873 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+INFO 2019-04-26 06:14:55,732 "GET /admin/auth/user/ HTTP/1.1" 200 9675
+INFO 2019-04-26 06:14:55,766 "GET /static/admin/css/changelists.css HTTP/1.1" 200 6170
+INFO 2019-04-26 06:14:55,781 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 6897
+INFO 2019-04-26 06:14:55,786 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 258648
+INFO 2019-04-26 06:14:55,834 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 128820
+INFO 2019-04-26 06:14:55,835 "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 363
+INFO 2019-04-26 06:14:55,835 "GET /static/admin/js/core.js HTTP/1.1" 200 7134
+INFO 2019-04-26 06:14:55,836 "GET /static/admin/js/actions.js HTTP/1.1" 200 6502
+INFO 2019-04-26 06:14:55,838 "GET /admin/jsi18n/ HTTP/1.1" 200 3185
+INFO 2019-04-26 06:14:55,840 "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1538
+INFO 2019-04-26 06:14:55,843 "GET /static/admin/js/urlify.js HTTP/1.1" 200 8729
+INFO 2019-04-26 06:14:55,846 "GET /static/admin/img/icon-no.svg HTTP/1.1" 200 560
+INFO 2019-04-26 06:14:55,869 "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+INFO 2019-04-26 06:14:56,154 "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+INFO 2019-04-26 06:14:56,154 "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+INFO 2019-04-26 06:14:56,155 "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+INFO 2019-04-26 06:15:06,308 "GET / HTTP/1.1" 200 1339
+INFO 2019-04-26 06:15:07,480 "GET /logout/ HTTP/1.1" 302 0
+INFO 2019-04-26 06:15:07,485 "GET / HTTP/1.1" 200 1302
+INFO 2019-04-26 06:15:10,342 "GET /accounts/login/ HTTP/1.1" 200 2447
+INFO 2019-04-26 06:15:24,944 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2019-04-26 06:15:24,952 "GET / HTTP/1.1" 200 1840
+INFO 2019-04-26 06:15:30,995 "GET /attendance/ HTTP/1.1" 200 2330
+INFO 2019-04-26 06:15:34,802 "POST /attendance/ HTTP/1.1" 302 0
+INFO 2019-04-26 06:15:34,812 "GET / HTTP/1.1" 200 1840
